@@ -1,5 +1,7 @@
 # EVE Firewall Simulator
 
+https://just-addwater.github.io/Eve-Firewall-Sim/
+
 A browser-based practice simulator for **firewalling** in EVE Online — flying a
 smartbomb Nestor between your fleet and hostile missile fleets. Trains
 positioning and movement. See [docs/design-brief.md](docs/design-brief.md) for
