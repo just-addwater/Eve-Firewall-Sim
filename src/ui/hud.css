@@ -1,0 +1,511 @@
+/* Photon UI look (matched to the user's client screenshots in /ui):
+   near-black translucent windows with a blurred backdrop and no visible
+   border, sentence-case window titles with a "—" minimize, neutral grey
+   text (not blue-tinted), underline tabs, tabular numerals, and a
+   condensed squarish typeface (Bahnschrift is the closest Windows-bundled
+   match to EVE's). */
+:root {
+  --win-bg: rgba(7, 9, 11, 0.68);
+  --win-line: rgba(255, 255, 255, 0.07);
+  --hud-bg: var(--win-bg);
+  --hud-line: rgba(255, 255, 255, 0.11);
+  --hud-text: #d0d3d6;
+  --hud-dim: #8c9196;
+  --hud-accent: #c9cdd1;
+  --hud-teal: #5fc8d8;
+  --hud-green: #74d98a;
+  --hud-amber: #e0a84a;
+  --hud-red: #d0463a;
+  --btn-bg: rgba(255, 255, 255, 0.06);
+  --btn-line: rgba(255, 255, 255, 0.13);
+}
+
+* { box-sizing: border-box; }
+html { color-scheme: dark; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: #000; }
+body {
+  font-family: Bahnschrift, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-stretch: 94%;
+  font-variant-numeric: tabular-nums;
+  color: var(--hud-text);
+  font-size: 12px;
+  user-select: none;
+}
+
+#app { position: fixed; inset: 0; }
+/* EVE in-space cursor: three ticks around the hotspot + a small square SE of
+   it (matched to the user's cursor screenshot). */
+#space {
+  width: 100%; height: 100%; display: block;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><g stroke="black" stroke-width="3" fill="none" opacity="0.55"><path d="M11.5 2 v5 M2 11.5 h5 M11.5 16 v5"/><rect x="14" y="13" width="7" height="7"/></g><g stroke="white" stroke-width="1.4" fill="none"><path d="M11.5 2 v5 M2 11.5 h5 M11.5 16 v5"/><rect x="14" y="13" width="7" height="7"/></g><rect x="16.6" y="15.6" width="1.8" height="1.8" fill="white"/></svg>') 11 11, crosshair;
+}
+
+/* ---------- Brackets & in-space labels ---------- */
+#brackets { position: fixed; inset: 0; pointer-events: none; overflow: hidden; }
+.bracket { position: absolute; left: 0; top: 0; pointer-events: auto; cursor: pointer; }
+.bracket .diamond {
+  width: 9px; height: 9px; border: 1px solid #b4bcc2;
+  transform: translate(-50%, -50%) rotate(45deg);
+  position: absolute;
+}
+/* Own ship: EVE draws the active ship as a plain square, not a diamond. */
+.bracket .diamond.own {
+  transform: translate(-50%, -50%);
+  width: 11px; height: 11px;
+  border-color: #d3d8dc; background: rgba(211, 216, 220, 0.18);
+}
+.bracket.selected .diamond { border-color: #fff; box-shadow: 0 0 6px rgba(255, 255, 255, 0.6); }
+.blabel { position: absolute; left: 10px; top: -6px; white-space: nowrap; text-shadow: 0 0 3px #000; }
+.bname { color: var(--hud-text); margin-right: 6px; }
+.bdist { color: var(--hud-dim); }
+
+.bracket .diamond.friendly { border-color: #a98be0; }
+.hostile-label .bname { color: #e08a8a; }
+/* Firewall-spot ghost: soft pulsing amber ring on the lane */
+.ghost-marker { pointer-events: none; }
+.ghost-marker .ghost-ring {
+  position: absolute; width: 14px; height: 14px; border-radius: 50%;
+  border: 1px solid rgba(224, 190, 110, 0.85);
+  transform: translate(-50%, -50%);
+  animation: ghost-pulse 2.4s ease-in-out infinite;
+}
+.ghost-marker .ghost-dot {
+  position: absolute; width: 3px; height: 3px; border-radius: 50%;
+  background: rgba(224, 190, 110, 0.9); transform: translate(-50%, -50%);
+}
+.ghost-marker .gname {
+  color: rgba(224, 190, 110, 0.65); font-size: 9px;
+  letter-spacing: 1px; text-transform: uppercase;
+}
+@keyframes ghost-pulse {
+  0%, 100% { width: 14px; height: 14px; opacity: 0.9; }
+  50% { width: 22px; height: 22px; opacity: 0.4; }
+}
+
+/* Bracket hover label (name + distance, as in the client) */
+.hover-label {
+  position: absolute; left: 0; top: 0; pointer-events: none; white-space: nowrap;
+  font-size: 11px; text-shadow: 0 0 3px #000; z-index: 5;
+  background: rgba(6, 8, 10, 0.7); padding: 1px 5px;
+}
+.hover-label .hn { color: #e4e7e9; margin-right: 6px; }
+.hover-label.hostile .hn { color: #e89a8a; }
+.hover-label .hd { color: var(--hud-dim); }
+
+.sel-marker { pointer-events: none; }
+.sel-marker .selbox {
+  width: 15px; height: 15px; border: 1px solid #fff;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+.ring-label {
+  position: absolute; left: 0; top: 0; color: #8f979e; font-size: 10px;
+  transform: translate(-50%, -50%); pointer-events: none; text-shadow: 0 0 3px #000;
+}
+
+/* ---------- Windows ---------- */
+#hud { position: fixed; inset: 0; pointer-events: none; }
+#hud .panel {
+  pointer-events: auto; background: var(--win-bg);
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(7px); -webkit-backdrop-filter: blur(7px);
+}
+/* Minimized: the client collapses a window to its title bar. */
+#hud .panel.min > :not(.win-title) { display: none !important; }
+.win-title {
+  display: flex; justify-content: space-between; align-items: center; gap: 8px;
+  padding: 5px 6px 4px 10px; color: #c6cacd; font-size: 12px;
+  border-bottom: 1px solid var(--win-line); white-space: nowrap;
+}
+.win-title > span:first-child { overflow: hidden; text-overflow: ellipsis; }
+.win-tools { display: flex; gap: 1px; margin-left: auto; flex: none; }
+.win-tool, .win-close {
+  width: 18px; height: 16px; line-height: 16px; text-align: center;
+  color: var(--hud-dim); cursor: pointer; font-size: 12px; flex: none;
+}
+.win-tool:hover, .win-close:hover { color: #fff; background: rgba(255, 255, 255, 0.08); }
+.win-body { padding: 8px 10px 10px; overflow-y: auto; }
+.win-body::-webkit-scrollbar, .ov-body::-webkit-scrollbar { width: 7px; }
+.win-body::-webkit-scrollbar-thumb, .ov-body::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.18); }
+.hidden { display: none !important; }
+
+/* Buttons (Photon: dark, thin light border, brighten on hover) */
+.sbtn, .lvl-btn {
+  border: 1px solid var(--btn-line); background: var(--btn-bg);
+  padding: 4px 8px; cursor: pointer; color: var(--hud-text); font-size: 11px;
+  transition: background 0.12s, border-color 0.12s;
+}
+.sbtn:hover, .lvl-btn:hover { background: rgba(255, 255, 255, 0.13); border-color: rgba(255, 255, 255, 0.28); }
+.sbtn:active, .lvl-btn:active { background: rgba(255, 255, 255, 0.2); }
+.sbtn-primary {
+  background: rgba(255, 255, 255, 0.14); border-color: rgba(255, 255, 255, 0.32);
+  color: #eef0f2; text-align: center; flex: 1;
+}
+.sbtn-primary:hover { background: rgba(255, 255, 255, 0.22); }
+.btn-row { display: flex; gap: 4px; margin-top: 8px; }
+.btn-row .sbtn { flex: 1; text-align: center; }
+
+/* Form controls in the HUD palette */
+input[type="range"] {
+  -webkit-appearance: none; appearance: none; flex: 1; min-width: 0;
+  height: 14px; margin: 0; background: transparent; cursor: pointer;
+}
+input[type="range"]::-webkit-slider-runnable-track { height: 2px; background: rgba(255, 255, 255, 0.22); }
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; width: 9px; height: 11px; margin-top: -4.5px;
+  background: #d8dcdf; border: 1px solid #16191c; border-radius: 1px;
+}
+input[type="range"]:hover::-webkit-slider-thumb { background: #fff; }
+input[type="range"]::-moz-range-track { height: 2px; background: rgba(255, 255, 255, 0.22); }
+input[type="range"]::-moz-range-thumb { width: 9px; height: 11px; background: #d8dcdf; border: 1px solid #16191c; border-radius: 1px; }
+input[type="checkbox"] { accent-color: #4d5359; width: 12px; height: 12px; margin: 0; cursor: pointer; }
+kbd { font: inherit; color: var(--hud-dim); }
+kbd::before { content: '['; }
+kbd::after { content: ']'; }
+
+/* ---------- Center: flight status, toasts, ticker ---------- */
+#status {
+  position: absolute; bottom: 215px; left: 50%; transform: translateX(-50%);
+  text-align: center; pointer-events: none;
+}
+#status .title { font-size: 18px; font-weight: 600; letter-spacing: 3px; color: #f0f2f4; text-shadow: 0 0 8px rgba(0, 0, 0, 0.8); }
+#status .sub { color: #b9bec3; margin-top: 3px; }
+
+#toasts {
+  position: absolute; top: 18%; left: 50%; transform: translateX(-50%);
+  text-align: center; pointer-events: none;
+}
+/* Callout toasts styled as fleet Broadcast History rows (timestamped, maroon) */
+.toast {
+  background: rgba(74, 16, 14, 0.82); border: 1px solid rgba(150, 60, 50, 0.35);
+  padding: 4px 12px; margin-top: 4px; color: #e2d5d2; transition: opacity 0.6s;
+  font-size: 11px; text-align: left;
+}
+.toast .bc-time { color: #b8a49e; }
+.toast .bc-dim { color: #9a827c; }
+
+/* Combat-log ticker — top center. Line format matches the client: teal damage
+   number, dim "to"/quality, white target name. */
+#ticker {
+  position: absolute; top: 8%; left: 50%; transform: translateX(-50%);
+  text-align: center; pointer-events: none; font-size: 11px;
+}
+.tline { margin-top: 2px; text-shadow: 0 0 4px #000; transition: opacity 0.6s; }
+.cl-dmg { color: var(--hud-teal); }
+.cl-dim { color: #8a9196; }
+.cl-name { color: #e8ebed; }
+.tline.leak .cl-dmg { color: #e08a8a; }
+
+/* Align-point marker: small circle, pinned in space while aligning */
+.align-marker { position: absolute; left: 0; top: 0; pointer-events: none; opacity: 0.9; }
+.align-marker .am-ring {
+  position: absolute; width: 12px; height: 12px; border-radius: 50%;
+  border: 1.5px solid rgba(130, 185, 220, 0.95);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 5px rgba(110, 170, 210, 0.5);
+}
+
+/* ---------- Bottom center: gauge + module rack ---------- */
+#gauge-cluster {
+  position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%);
+  display: flex; align-items: flex-end; gap: 18px; pointer-events: auto;
+}
+@media (max-width: 1150px) {
+  #gauge-cluster { transform: translateX(-50%) scale(0.82); transform-origin: bottom center; }
+}
+/* Tactical-overlay button beside the gauge, where the client keeps it */
+#gauge-side { display: flex; flex-direction: column; justify-content: flex-end; padding-bottom: 40px; margin-right: -8px; }
+.side-btn {
+  width: 30px; height: 30px; border-radius: 50%; cursor: pointer;
+  border: 1px solid rgba(200, 205, 210, 0.3);
+  background: radial-gradient(circle at 50% 30%, rgba(40, 44, 48, 0.95), rgba(8, 10, 12, 0.98) 75%);
+  display: flex; align-items: center; justify-content: center;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.side-btn svg { width: 18px; height: 18px; stroke: #aeb4b9; stroke-width: 1.2; fill: none; }
+.side-btn svg .fill { fill: #aeb4b9; stroke: none; }
+.side-btn:hover { border-color: rgba(230, 235, 240, 0.6); }
+.side-btn.active { border-color: rgba(120, 226, 144, 0.9); box-shadow: 0 0 6px rgba(120, 226, 144, 0.35); }
+.side-btn.active svg { stroke: #dff2e4; }
+.side-btn.active svg .fill { fill: #dff2e4; }
+
+#gauge { position: relative; width: 168px; height: 168px; }
+#gauge svg { width: 100%; height: 100%; cursor: pointer; }
+/* Speed lives at the gauge bottom only: the arc bar (SVG) + the number just
+   above it; − / + sit at the gauge midline sides (client layout) */
+#gauge .speed-read {
+  position: absolute; left: 0; right: 0; bottom: 24px; display: flex;
+  flex-direction: column; align-items: center; pointer-events: none;
+}
+#gauge .speed-val {
+  font-size: 13px; color: #e8ebed; background: rgba(8, 10, 12, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.16); border-radius: 2px; padding: 0 8px;
+  min-width: 70px; text-align: center;
+}
+#gauge .speed-max { font-size: 9px; color: var(--hud-dim); margin-top: 1px; }
+.gbtn {
+  pointer-events: auto; position: absolute; width: 16px; height: 16px;
+  line-height: 15px; text-align: center;
+  color: #c4c9cd; cursor: pointer; font-size: 14px; user-select: none;
+}
+.gbtn-min { left: 6px; top: 52%; }
+.gbtn-max { right: 6px; top: 52%; }
+.gbtn:hover { color: #fff; text-shadow: 0 0 4px rgba(255, 255, 255, 0.7); }
+
+#modules { display: flex; flex-direction: column; gap: 5px; padding-bottom: 24px; }
+.mod-row { display: flex; gap: 6px; align-items: flex-end; }
+.bomb-slot { width: 50px !important; }
+/* Active smartbomb: the client's green module ring (no outer glow) */
+.bomb-slot.active .mod-btn {
+  border-color: rgba(120, 226, 144, 0.95);
+  box-shadow: inset 0 7px 12px rgba(150, 235, 170, 0.14), inset 0 -7px 12px rgba(0, 0, 0, 0.65);
+}
+.heat-spacer { height: 12px; }
+.mjd-slot.active .mod-btn { color: #eaf2f6; border-color: rgba(159, 212, 255, 0.9); }
+.mjd-slot.cooldown .ring {
+  background: conic-gradient(var(--hud-amber) calc(var(--prog) * 1turn), rgba(255,255,255,0.06) 0);
+}
+.mod-slot { position: relative; width: 50px; text-align: center; }
+.heat-pip {
+  width: 14px; height: 8px; margin: 0 auto 4px; border: 1px solid var(--hud-line);
+  border-radius: 3px; cursor: pointer; background: rgba(30, 33, 36, 0.9);
+}
+.heat-pip.on { background: var(--hud-red); border-color: #e08080; box-shadow: 0 0 6px rgba(220, 90, 90, 0.7); }
+.mod-btn {
+  position: relative; width: 46px; height: 46px; border-radius: 50%;
+  border: 1px solid rgba(190, 200, 210, 0.35);
+  background: radial-gradient(circle at 50% 28%, rgba(44, 48, 54, 0.96), rgba(8, 10, 12, 0.98) 72%);
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  font-size: 11px; color: var(--hud-dim); margin: 0 auto;
+  box-shadow: inset 0 7px 12px rgba(200, 215, 225, 0.08), inset 0 -7px 12px rgba(0, 0, 0, 0.65);
+  transition: transform 0.08s;
+}
+.mod-btn:active { transform: scale(0.94); }
+/* Glassy specular highlight across the top of the button, as in the client. */
+.mod-btn::before {
+  content: ''; position: absolute; top: 2px; left: 15%; width: 70%; height: 42%;
+  border-radius: 50%; pointer-events: none;
+  background: linear-gradient(rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0));
+}
+.mod-btn .ring {
+  position: absolute; inset: -5px; border-radius: 50%;
+  background: conic-gradient(#5fd678 calc(var(--prog) * 1turn), rgba(255,255,255,0.07) 0);
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 5px), #000 calc(100% - 4px));
+  mask: radial-gradient(farthest-side, transparent calc(100% - 5px), #000 calc(100% - 4px));
+}
+.mod-slot.active .mod-btn {
+  color: #dff2e4; border-color: rgba(120, 226, 144, 0.9);
+  box-shadow: inset 0 7px 12px rgba(150, 235, 170, 0.14), inset 0 -7px 12px rgba(0, 0, 0, 0.65);
+}
+.mod-slot.pending .mod-btn { border-color: var(--hud-amber); }
+.mico {
+  display: flex; align-items: center; justify-content: center;
+  width: 100%; height: 100%; border-radius: 50%; overflow: hidden;
+}
+.mico-img { width: 92%; height: 92%; object-fit: contain; border-radius: 50%; }
+
+/* ---------- Left column: Ship (top), Local + Drill (bottom) ---------- */
+#left-col {
+  position: absolute; top: 14px; bottom: 24px; left: 14px; width: 235px;
+  display: flex; flex-direction: column; gap: 8px; pointer-events: none;
+}
+#left-col > .panel { pointer-events: auto; flex: 0 0 auto; }
+.left-spacer { flex: 1 0 0; }
+/* The ship window is the one that gives way (scrolls) when the column is short. */
+#left-col > #readouts { flex: 0 1 auto; min-height: 0; display: flex; flex-direction: column; }
+#readouts .win-body { min-height: 0; padding: 8px 12px 10px; }
+#readouts .r-row { display: flex; justify-content: space-between; padding: 1px 0; }
+#readouts .r-row span:first-child { color: var(--hud-dim); }
+#readouts .controls { margin-top: 6px; }
+.ctl-title { color: var(--hud-dim); font-size: 10px; letter-spacing: 1px; text-transform: uppercase; margin: 6px 0 2px; }
+/* Collapsible group headers (the client's ▾ section rows) */
+.ctl-title.fold { cursor: pointer; display: flex; align-items: center; gap: 6px; margin: 8px 0 3px; }
+.ctl-title.fold::before {
+  content: ''; width: 0; height: 0; border-left: 4px solid transparent;
+  border-right: 4px solid transparent; border-top: 5px solid #9aa0a5; transition: transform 0.15s;
+}
+.ctl-title.fold.folded::before { transform: rotate(-90deg); }
+.ctl-title.fold:hover { color: var(--hud-text); }
+#readouts label { display: flex; gap: 6px; align-items: center; padding: 2px 0; cursor: pointer; }
+.ctl-note { color: #6a7176; text-transform: none; letter-spacing: 0; }
+
+/* Local chat mock — the count is the early-warning cue */
+#local .win-title { border-bottom: none; }
+#local .l-count { color: #e4e7e9; margin-left: 2px; }
+#local.spike { animation: local-spike 1.6s ease-out; }
+#local.spike .l-count { color: #ff8d7a; }
+#local.drop .l-count { color: var(--hud-dim); }
+@keyframes local-spike {
+  0% { background: rgba(170, 40, 25, 0.85); box-shadow: 0 0 14px rgba(220, 70, 45, 0.6); }
+  100% { background: var(--win-bg); box-shadow: none; }
+}
+
+/* Drill score */
+#score .sc-body { padding: 8px 12px 10px; }
+#score .sc-big { font-size: 26px; text-align: center; color: #e8ebed; }
+#score .sc-big.good { color: var(--hud-green); }
+#score .sc-big.mid { color: var(--hud-amber); }
+#score .sc-big.bad { color: var(--hud-red); }
+#score .sc-sub { text-align: center; color: var(--hud-dim); font-size: 10px; margin-bottom: 6px; }
+#score .r-row { display: flex; justify-content: space-between; padding: 1px 0; }
+#score .r-row span:first-child { color: var(--hud-dim); }
+#score .pending { color: var(--hud-amber); }
+.val-good { color: var(--hud-green); }
+.val-mid { color: var(--hud-amber); }
+.val-bad { color: var(--hud-red); }
+
+/* Difficulty ladder */
+.lvl-row { display: flex; gap: 4px; padding: 2px 0 4px; }
+.lvl-btn { flex: 1; text-align: center; padding: 3px 0; }
+.lvl-btn.active { border-color: rgba(255, 255, 255, 0.45); background: rgba(255, 255, 255, 0.18); color: #fff; }
+
+/* ---------- Scenario window (floating, draggable by its title) ---------- */
+#c-scenario {
+  position: fixed; left: 258px; top: 14px; width: 292px; z-index: 30;
+  margin: 0 !important; padding: 0 !important;
+  background: rgba(7, 9, 11, 0.9); border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(7px); -webkit-backdrop-filter: blur(7px);
+  display: flex; flex-direction: column; max-height: calc(100vh - 28px);
+  pointer-events: auto;
+}
+#c-scenario .win-body { padding: 8px 10px 10px; }
+.cfg-grid { display: grid; grid-template-columns: 104px 1fr; gap: 4px 8px; align-items: center; }
+.cfg-grid label { color: var(--hud-dim); cursor: help; }
+.cfg-grid .ctl-title.span2 {
+  grid-column: 1 / -1; margin: 8px 0 1px; padding: 3px 0 3px 7px;
+  border-left: 2px solid rgba(200, 205, 210, 0.5);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.08), transparent 70%);
+}
+.cfg-grid input[type="checkbox"] { justify-self: start; }
+.cfg-grid .disc-row { display: flex; align-items: center; gap: 5px; }
+.cfg-grid .disc-row small { color: var(--hud-dim); font-size: 9px; text-transform: uppercase; letter-spacing: 1px; }
+.cfg-grid input, .cfg-grid select {
+  background: rgba(255, 255, 255, 0.05); border: 1px solid var(--btn-line);
+  color: var(--hud-text); padding: 2px 4px; font-size: 11px; width: 100%; font-family: inherit;
+}
+.cfg-grid input:focus, .cfg-grid select:focus { outline: none; border-color: rgba(255, 255, 255, 0.4); }
+.cfg-grid input[type="range"] { border: none; background: none; padding: 0; }
+
+/* Right-click distance menu for Orbit / Keep at Range */
+.range-menu {
+  position: fixed; z-index: 50; min-width: 130px; padding: 3px 0;
+  background: rgba(7, 9, 11, 0.94); border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5); font-size: 11px; color: var(--hud-text);
+}
+.range-menu .rm-title {
+  padding: 3px 10px 4px; color: var(--hud-dim); font-size: 10px;
+  letter-spacing: 1px; text-transform: uppercase; border-bottom: 1px solid var(--win-line);
+}
+.range-menu .rm-item { padding: 3px 10px; cursor: pointer; }
+.range-menu .rm-item:hover { background: rgba(255, 255, 255, 0.12); }
+.range-menu .rm-item.active { color: #fff; }
+.range-menu .rm-item.active::before { content: '✓ '; color: #c9cdd1; }
+
+/* ---------- Keyboard cheat sheet ---------- */
+#keys {
+  position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  width: 420px; z-index: 40; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+#keys .win-body { padding: 4px 10px 10px; }
+table.keys { border-collapse: collapse; width: 100%; font-size: 11px; }
+table.keys td { padding: 3px 6px; border-bottom: 1px solid var(--win-line); vertical-align: top; }
+table.keys td.k { color: #e8ebed; white-space: nowrap; width: 42%; }
+
+/* ---------- Selected item — top right ---------- */
+#selected { position: absolute; top: 14px; right: 14px; width: 240px; padding: 0 0 8px; }
+#selected .sname { font-size: 14px; color: #e8ebed; padding: 8px 12px 0; }
+#selected .sdist { color: var(--hud-dim); margin: 2px 0 8px; padding: 0 12px; }
+#selected .sdist span { color: var(--hud-text); }
+#selected .sbtns { display: flex; gap: 4px; padding: 0 10px; }
+.ibtn {
+  width: 30px; height: 26px; cursor: pointer; display: flex;
+  align-items: center; justify-content: center;
+  border: 1px solid transparent; transition: background 0.12s, border-color 0.12s;
+}
+.ibtn:hover { border-color: var(--btn-line); background: rgba(255, 255, 255, 0.1); }
+.ibtn:active { background: rgba(255, 255, 255, 0.18); }
+.ibtn svg { width: 19px; height: 19px; stroke: #d3d7da; stroke-width: 1.3; fill: none; }
+.ibtn svg .fill { fill: #d3d7da; stroke: none; }
+#selected .hint { color: #6a7176; font-size: 10px; margin-top: 6px; }
+
+/* ---------- Overview — right side ---------- */
+#overview {
+  position: absolute; top: 160px; right: 14px; width: 340px;
+  display: flex; flex-direction: column; max-height: 52vh;
+}
+.ov-tabs { display: flex; gap: 0; padding: 0 4px; border-bottom: 1px solid var(--win-line); }
+.ov-tab {
+  padding: 5px 10px 4px; cursor: pointer; color: #b3b8bc;
+  border-bottom: 2px solid transparent; margin-bottom: -1px;
+}
+.ov-tab:hover { color: var(--hud-text); }
+.ov-tab.active { color: #eceef0; border-bottom-color: #d5d8db; }
+.ov-tab-plus { padding: 5px 8px 4px; color: #767c81; cursor: default; }
+#overview .ov-head, .ov-row {
+  display: grid; grid-template-columns: 18px 64px 1fr 76px 50px; gap: 4px;
+  padding: 1px 6px; align-items: center;
+}
+#overview .ov-head {
+  color: var(--hud-dim); border-bottom: 1px solid var(--win-line);
+  font-size: 11px; padding: 4px 6px 3px;
+}
+#overview .ov-head .d.sorted { color: #d5d8db; }
+#overview .ov-head .d.sorted i { font-style: normal; font-size: 8px; color: #b3b8bc; }
+#overview .ov-head .v, #overview .ov-head .d { text-align: right; }
+#overview .ov-body { overflow-y: auto; flex: 1; }
+.ov-row { cursor: pointer; font-size: 12px; white-space: nowrap; line-height: 18px; }
+.ov-row span { overflow: hidden; text-overflow: ellipsis; }
+.ov-row .d, .ov-row .v { text-align: right; }
+.ov-row:hover { background: rgba(255, 255, 255, 0.09); }
+.ov-row.selected { box-shadow: inset 0 0 0 1px rgba(220, 224, 228, 0.7); }
+/* Icon column: ship glyph + standing colortag badge (red minus = hostile,
+   violet star = fleet — EVE Uni Color_Tag palette) */
+.ov-row .ico { position: relative; height: 12px; overflow: visible; }
+.ov-row .ico .sh {
+  position: absolute; left: 1px; top: 2px; width: 8px; height: 8px;
+  border: 1px solid #b8c0c6;
+}
+.ov-row.ov-beacon .ico .sh { border-radius: 50%; border-color: #8f979e; }
+.ov-row.ov-fleet .ico .sh { border-color: #9fb6de; }
+.ov-row.ov-hostile .ico .sh { border-color: #e09a8a; }
+.ov-row .ico .tag {
+  position: absolute; left: 6px; top: -1px; width: 7px; height: 7px;
+  font-style: normal; font-size: 7px; line-height: 7px; text-align: center;
+}
+.ov-row.ov-hostile .ico .tag { background: #b1220f; }
+.ov-row.ov-hostile .ico .tag::before { content: '–'; color: #fff; font-weight: 700; line-height: 6px; display: block; }
+.ov-row.ov-fleet .ico .tag { background: #7d5eb8; }
+.ov-row.ov-fleet .ico .tag::before { content: '★'; color: #fff; font-size: 6px; display: block; }
+/* Row backgrounds: solid rust-red hostile rows (as in the reference footage),
+   steel-blue fleet rows (Photon fleet-member background) */
+.ov-row.ov-hostile { color: #f0ddd2; background: rgba(131, 51, 10, 0.62); }
+.ov-row.ov-hostile:hover { background: rgba(150, 60, 14, 0.75); }
+.ov-row.ov-fleet { color: #d5e2ec; background: rgba(42, 79, 110, 0.45); }
+.ov-row.ov-fleet:hover { background: rgba(52, 96, 132, 0.55); }
+.ov-row.ov-beacon .n { color: #b8c0c6; }
+
+/* ---------- Calibration modal ---------- */
+#calib {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  width: 560px; max-height: 80vh; overflow: auto; padding: 14px 16px; z-index: 10;
+}
+#calib h3 { margin: 0 0 8px; font-weight: 400; letter-spacing: 2px; color: #e8ebed; }
+#calib table { width: 100%; border-collapse: collapse; font-size: 11px; }
+#calib td, #calib th { padding: 3px 6px; text-align: right; border-bottom: 1px solid var(--win-line); }
+#calib td:first-child, #calib th:first-child { text-align: left; }
+#calib .pass { color: var(--hud-green); }
+#calib .fail { color: var(--hud-red); }
+#calib .note { color: var(--hud-dim); margin-top: 8px; font-size: 11px; }
+
+/* ---------- Briefing card (what this drill trains), shown at every start ---------- */
+#briefing {
+  position: absolute; top: 24%; left: 50%; transform: translateX(-50%);
+  width: 440px; cursor: pointer; transition: opacity 0.7s; z-index: 20;
+}
+#briefing .brief-text { line-height: 1.45; color: #dfe2e5; margin-bottom: 6px; }
+#briefing .ctl-note { font-size: 10px; }
+/* Scenario window: seed + New, saved-slot button rows */
+.cfg-grid .btn-row.span2 { grid-column: 1 / -1; margin-top: 2px; }
+.cfg-grid .disc-row .sbtn { flex: none; padding: 2px 7px; }

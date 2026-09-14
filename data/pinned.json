@@ -1,0 +1,189 @@
+{
+ "provenance": {
+  "source": "ESI latest / tranquility",
+  "fetched": "2026-08-29T00:52:17.440Z",
+  "note": "raw responses in esi-raw.json"
+ },
+ "nestor": {
+  "typeId": 33472,
+  "mass": 20000000,
+  "agility": 0.35,
+  "maxVelocity": 70,
+  "signatureRadius": 420,
+  "radius": 250,
+  "slots": {
+   "hi": 7,
+   "med": 6,
+   "low": 6
+  },
+  "warpSpeedAUs": 3
+ },
+ "modules": {
+  "platIN1600": {
+   "typeId": 31900,
+   "massAddition": 3000000
+  },
+  "trimarkII": {
+   "typeId": 26302,
+   "drawback": 10,
+   "drawbackAppliedInFittingStats": false
+  },
+  "mwdGistX500": {
+   "typeId": 19359,
+   "speedFactor": 520,
+   "speedBoostFactor": 150000000,
+   "massAddition": 50000000,
+   "sigRadiusBonusPct": 350,
+   "durationMs": 10000,
+   "overloadSpeedFactorBonusPct": 50
+  },
+  "abGistX100": {
+   "typeId": 18676,
+   "speedFactor": 165,
+   "speedBoostFactor": 150000000,
+   "massAddition": 50000000,
+   "durationMs": 10000,
+   "overloadSpeedFactorBonusPct": 50
+  },
+  "sbDarkBloodLargeEMP": {
+   "typeId": 14188,
+   "rangeM": 7500,
+   "emDamage": 375,
+   "durationMs": 10000,
+   "durationAtEPW5Ms": 7500,
+   "capacitorNeed": 130
+  },
+  "mjdLarge": {
+   "typeId": 4383,
+   "spoolMs": 12000,
+   "spoolAtSkillVMs": 9000,
+   "reactivationMs": 180000,
+   "jumpDistanceM": 100000
+  }
+ },
+ "missiles": {
+  "light": {
+   "typeId": 210,
+   "name": "Scourge Light Missile",
+   "baseVelocity": 3750,
+   "baseFlightS": 5,
+   "hp": 60,
+   "ownTypeResonance": 0.8,
+   "allVVelocity": 5625,
+   "allVFlightS": 7.5,
+   "allVRangeM": 42188
+  },
+  "heavy": {
+   "typeId": 209,
+   "name": "Scourge Heavy Missile",
+   "baseVelocity": 4300,
+   "baseFlightS": 6.5,
+   "hp": 120,
+   "ownTypeResonance": 0.8,
+   "allVVelocity": 6450,
+   "allVFlightS": 9.75,
+   "allVRangeM": 62888
+  },
+  "furyHeavy": {
+   "typeId": 2629,
+   "name": "Scourge Fury Heavy Missile",
+   "baseVelocity": 4300,
+   "baseFlightS": 4.875,
+   "hp": 120,
+   "ownTypeResonance": 0.8,
+   "allVVelocity": 6450,
+   "allVFlightS": 7.3125,
+   "allVRangeM": 47166
+  },
+  "ham": {
+   "typeId": 20307,
+   "name": "Scourge Heavy Assault Missile",
+   "baseVelocity": 2250,
+   "baseFlightS": 4,
+   "hp": 180,
+   "ownTypeResonance": 0.8,
+   "allVVelocity": 3375,
+   "allVFlightS": 6,
+   "allVRangeM": 20250
+  },
+  "cruise": {
+   "typeId": 203,
+   "name": "Scourge Cruise Missile",
+   "baseVelocity": 4700,
+   "baseFlightS": 14,
+   "hp": 240,
+   "ownTypeResonance": 0.8,
+   "allVVelocity": 7050,
+   "allVFlightS": 21,
+   "allVRangeM": 148050
+  },
+  "furyCruise": {
+   "typeId": 24533,
+   "name": "Scourge Fury Cruise Missile",
+   "baseVelocity": 4700,
+   "baseFlightS": 10.5,
+   "hp": 240,
+   "ownTypeResonance": 0.8,
+   "allVVelocity": 7050,
+   "allVFlightS": 15.75,
+   "allVRangeM": 111038
+  },
+  "torpedo": {
+   "typeId": 267,
+   "name": "Scourge Torpedo",
+   "baseVelocity": 1800,
+   "baseFlightS": 7.2,
+   "hp": 360,
+   "ownTypeResonance": 0.8,
+   "allVVelocity": 2700,
+   "allVFlightS": 10.8,
+   "allVRangeM": 29160
+  }
+ },
+ "hulls": {
+  "typhoon": {
+   "typeId": 644,
+   "maxVelocity": 130,
+   "agility": 0.11,
+   "signatureRadius": 330,
+   "mass": 100600000
+  },
+  "raven": {
+   "typeId": 638,
+   "maxVelocity": 113,
+   "agility": 0.12,
+   "signatureRadius": 410,
+   "mass": 99300000
+  },
+  "barghest": {
+   "typeId": 33820,
+   "maxVelocity": 148,
+   "agility": 0.098,
+   "signatureRadius": 370,
+   "mass": 98467000
+  },
+  "cerberus": {
+   "typeId": 11993,
+   "maxVelocity": 220,
+   "agility": 0.463,
+   "signatureRadius": 135,
+   "mass": 12720000
+  },
+  "muninn": {
+   "typeId": 12015,
+   "maxVelocity": 235,
+   "agility": 0.571,
+   "signatureRadius": 125,
+   "mass": 11000000
+  }
+ },
+ "skillsAssumedAllV": {
+  "Navigation": "+5%/lvl ship velocity (x1.25)",
+  "Acceleration Control": "+5%/lvl AB/MWD boost (x1.25)",
+  "Evasive Maneuvering": "-5%/lvl inertia (x0.75)",
+  "Energy Pulse Weapons": "-5%/lvl smartbomb cycle (x0.75)",
+  "Missile Projection (hostiles)": "+10%/lvl missile velocity (x1.5)",
+  "Missile Bombardment (hostiles)": "+10%/lvl flight time (x1.5)",
+  "Micro Jump Drive Operation": "-5%/lvl spool (x0.75)"
+ }
+}

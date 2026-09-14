@@ -1,0 +1,5361 @@
+{
+ "fetched": "2026-08-29T00:52:17.440Z",
+ "source": "ESI latest / tranquility",
+ "types": {
+  "Nestor": {
+   "capacity": 875,
+   "description": "This was one of the first vessels the Sisters of EVE made available to capsuleers. It had been under development by the Sanctuary corporation, whose interest in exploration includes not only search & rescue operations but also a constant inquiry into the nature of the EVE Gate. Thanks to the Sisters' efforts and the Sanctuary's particular expertise, the Nestor is an agile, tenacious ship that aptly adheres to the mantra of both rescuers and explorers: Stay safe, stay hidden, and use every tool at your disposal. \r\n\r\nIt is particularly adept at venturing into dangerous territories, not merely in recovering whatever may be of interest but also in being able to safely bring it back. Its engines have alternate power sources that come into play should any of its cargo - for which it has plenty of room - cause serious interference with internal systems. Its weaponry runs best on renewable sources, an ideal for a ship that doesn't know how long it'll be in deep space. Its carapace is extremely well armored for a ship this agile, and covered in sensors capable of letting its crew track a myriad of different organic signatures. The crew itself is safely protected from any number of transmittable ailments from rescues and other unexpected passengers, thanks to special quarantine bays that are conveniently located near jettisonable openings. \r\n\r\nThe Sanctuary corporation poured uncountable resources into making the cloaking technology developed for the Stratios fit the Nestor, but were eventually forced to concede that it was impossible. The effort was not without benefit though, as part of their work focused on reducing the Nestor's mass enough that it could make its way into unexplored territories that might've been hazardous to bulkier vessels. This paid off by affording the Nestor unmatched access to wormhole space, and meant that the embedded miniature rescue vessel on the ship's hull could be relegated to a decommissioned role. With covert function off the table, the Sanctuary turned their eyes on logistics and now the Nestor serves as one of the best support platforms in New Eden.",
+   "dogma_attributes": [
+    {
+     "attribute_id": 3,
+     "value": 0
+    },
+    {
+     "attribute_id": 4,
+     "value": 20000000
+    },
+    {
+     "attribute_id": 9,
+     "value": 10890
+    },
+    {
+     "attribute_id": 1547,
+     "value": 3
+    },
+    {
+     "attribute_id": 12,
+     "value": 6
+    },
+    {
+     "attribute_id": 13,
+     "value": 6
+    },
+    {
+     "attribute_id": 14,
+     "value": 7
+    },
+    {
+     "attribute_id": 15,
+     "value": 0
+    },
+    {
+     "attribute_id": 18,
+     "value": 0
+    },
+    {
+     "attribute_id": 19,
+     "value": 1
+    },
+    {
+     "attribute_id": 21,
+     "value": 0
+    },
+    {
+     "attribute_id": 37,
+     "value": 70
+    },
+    {
+     "attribute_id": 38,
+     "value": 875
+    },
+    {
+     "attribute_id": 552,
+     "value": 420
+    },
+    {
+     "attribute_id": 48,
+     "value": 680
+    },
+    {
+     "attribute_id": 561,
+     "value": 10
+    },
+    {
+     "attribute_id": 564,
+     "value": 163
+    },
+    {
+     "attribute_id": 55,
+     "value": 1025000
+    },
+    {
+     "attribute_id": 2112,
+     "value": 1
+    },
+    {
+     "attribute_id": 2113,
+     "value": 1
+    },
+    {
+     "attribute_id": 11,
+     "value": 11250
+    },
+    {
+     "attribute_id": 70,
+     "value": 0.35
+    },
+    {
+     "attribute_id": 524,
+     "value": 0.75
+    },
+    {
+     "attribute_id": 76,
+     "value": 90000
+    },
+    {
+     "attribute_id": 525,
+     "value": 1
+    },
+    {
+     "attribute_id": 600,
+     "value": 3
+    },
+    {
+     "attribute_id": 101,
+     "value": 0
+    },
+    {
+     "attribute_id": 102,
+     "value": 5
+    },
+    {
+     "attribute_id": 1132,
+     "value": 350
+    },
+    {
+     "attribute_id": 109,
+     "value": 0.67
+    },
+    {
+     "attribute_id": 110,
+     "value": 0.67
+    },
+    {
+     "attribute_id": 111,
+     "value": 0.67
+    },
+    {
+     "attribute_id": 1137,
+     "value": 3
+    },
+    {
+     "attribute_id": 1555,
+     "value": 750
+    },
+    {
+     "attribute_id": 633,
+     "value": 8
+    },
+    {
+     "attribute_id": 124,
+     "value": 16777215
+    },
+    {
+     "attribute_id": 129,
+     "value": 1000
+    },
+    {
+     "attribute_id": 1154,
+     "value": 3
+    },
+    {
+     "attribute_id": 136,
+     "value": 1
+    },
+    {
+     "attribute_id": 661,
+     "value": 1000
+    },
+    {
+     "attribute_id": 662,
+     "value": 0.5
+    },
+    {
+     "attribute_id": 1688,
+     "value": 100
+    },
+    {
+     "attribute_id": 153,
+     "value": 1.38e-7
+    },
+    {
+     "attribute_id": 1178,
+     "value": 100
+    },
+    {
+     "attribute_id": 1179,
+     "value": 0.01
+    },
+    {
+     "attribute_id": 1692,
+     "value": 4
+    },
+    {
+     "attribute_id": 161,
+     "value": 470000
+    },
+    {
+     "attribute_id": 162,
+     "value": 250
+    },
+    {
+     "attribute_id": 5796,
+     "value": 2147483647000
+    },
+    {
+     "attribute_id": 113,
+     "value": 0.67
+    },
+    {
+     "attribute_id": 1196,
+     "value": 0.01
+    },
+    {
+     "attribute_id": 1198,
+     "value": 0.01
+    },
+    {
+     "attribute_id": 1199,
+     "value": 100
+    },
+    {
+     "attribute_id": 1200,
+     "value": 100
+    },
+    {
+     "attribute_id": 182,
+     "value": 3339
+    },
+    {
+     "attribute_id": 183,
+     "value": 3336
+    },
+    {
+     "attribute_id": 188,
+     "value": 0
+    },
+    {
+     "attribute_id": 192,
+     "value": 7
+    },
+    {
+     "attribute_id": 3266,
+     "value": 50
+    },
+    {
+     "attribute_id": 3267,
+     "value": 100
+    },
+    {
+     "attribute_id": 3268,
+     "value": 0.05
+    },
+    {
+     "attribute_id": 1224,
+     "value": 0.5
+    },
+    {
+     "attribute_id": 715,
+     "value": 5000
+    },
+    {
+     "attribute_id": 716,
+     "value": 10
+    },
+    {
+     "attribute_id": 208,
+     "value": 0
+    },
+    {
+     "attribute_id": 209,
+     "value": 0
+    },
+    {
+     "attribute_id": 210,
+     "value": 30
+    },
+    {
+     "attribute_id": 211,
+     "value": 0
+    },
+    {
+     "attribute_id": 217,
+     "value": 395
+    },
+    {
+     "attribute_id": 1768,
+     "value": 11335
+    },
+    {
+     "attribute_id": 1259,
+     "value": 0.79
+    },
+    {
+     "attribute_id": 1261,
+     "value": 0.76
+    },
+    {
+     "attribute_id": 1262,
+     "value": 0.76
+    },
+    {
+     "attribute_id": 246,
+     "value": 395
+    },
+    {
+     "attribute_id": 1271,
+     "value": 125
+    },
+    {
+     "attribute_id": 1281,
+     "value": 1
+    },
+    {
+     "attribute_id": 263,
+     "value": 9790
+    },
+    {
+     "attribute_id": 264,
+     "value": 0
+    },
+    {
+     "attribute_id": 265,
+     "value": 10945
+    },
+    {
+     "attribute_id": 267,
+     "value": 0.5
+    },
+    {
+     "attribute_id": 268,
+     "value": 0.9
+    },
+    {
+     "attribute_id": 269,
+     "value": 0.65
+    },
+    {
+     "attribute_id": 270,
+     "value": 0.65
+    },
+    {
+     "attribute_id": 271,
+     "value": 1
+    },
+    {
+     "attribute_id": 272,
+     "value": 0.5
+    },
+    {
+     "attribute_id": 273,
+     "value": 0.6
+    },
+    {
+     "attribute_id": 274,
+     "value": 0.8
+    },
+    {
+     "attribute_id": 277,
+     "value": 1
+    },
+    {
+     "attribute_id": 278,
+     "value": 1
+    },
+    {
+     "attribute_id": 793,
+     "value": 50
+    },
+    {
+     "attribute_id": 283,
+     "value": 500
+    },
+    {
+     "attribute_id": 49,
+     "value": 0
+    },
+    {
+     "attribute_id": 1918,
+     "value": 10
+    },
+    {
+     "attribute_id": 907,
+     "value": 1
+    },
+    {
+     "attribute_id": 908,
+     "value": 5000
+    },
+    {
+     "attribute_id": 2115,
+     "value": 1
+    },
+    {
+     "attribute_id": 422,
+     "value": 1
+    },
+    {
+     "attribute_id": 3020,
+     "value": 1
+    },
+    {
+     "attribute_id": 79,
+     "value": 9000
+    },
+    {
+     "attribute_id": 479,
+     "value": 2500000
+    },
+    {
+     "attribute_id": 482,
+     "value": 7000
+    },
+    {
+     "attribute_id": 484,
+     "value": 0.75
+    },
+    {
+     "attribute_id": 492,
+     "value": -4
+    },
+    {
+     "attribute_id": 2045,
+     "value": 1
+    }
+   ],
+   "dogma_effects": [
+    {
+     "effect_id": 2186,
+     "is_default": false
+    },
+    {
+     "effect_id": 2187,
+     "is_default": false
+    },
+    {
+     "effect_id": 2465,
+     "is_default": false
+    },
+    {
+     "effect_id": 5460,
+     "is_default": false
+    },
+    {
+     "effect_id": 5725,
+     "is_default": false
+    },
+    {
+     "effect_id": 5726,
+     "is_default": false
+    },
+    {
+     "effect_id": 5737,
+     "is_default": false
+    },
+    {
+     "effect_id": 5738,
+     "is_default": false
+    },
+    {
+     "effect_id": 8377,
+     "is_default": false
+    }
+   ],
+   "graphic_id": 20384,
+   "group_id": 27,
+   "market_group_id": 1380,
+   "mass": 20000000,
+   "name": "Nestor",
+   "packaged_volume": 50000,
+   "portion_size": 1,
+   "published": true,
+   "radius": 250,
+   "type_id": 33472,
+   "volume": 470000
+  },
+  "Imperial Navy 1600mm Steel Plates": {
+   "capacity": 0,
+   "description": "Increases the maximum strength of the Armor.\r\n\r\nPenalty: Adds to your ship's mass, making it less agile and maneuverable in addition to decreasing the factor of thrust gained from speed modules like Afterburners and MicroWarpdrives.",
+   "dogma_attributes": [
+    {
+     "attribute_id": 161,
+     "value": 20
+    },
+    {
+     "attribute_id": 1692,
+     "value": 4
+    },
+    {
+     "attribute_id": 4,
+     "value": 0
+    },
+    {
+     "attribute_id": 38,
+     "value": 0
+    },
+    {
+     "attribute_id": 422,
+     "value": 1
+    },
+    {
+     "attribute_id": 1159,
+     "value": 5250
+    },
+    {
+     "attribute_id": 9,
+     "value": 40
+    },
+    {
+     "attribute_id": 162,
+     "value": 1
+    },
+    {
+     "attribute_id": 50,
+     "value": 27
+    },
+    {
+     "attribute_id": 277,
+     "value": 3
+    },
+    {
+     "attribute_id": 182,
+     "value": 3394
+    },
+    {
+     "attribute_id": 633,
+     "value": 8
+    },
+    {
+     "attribute_id": 796,
+     "value": 3000000
+    },
+    {
+     "attribute_id": 30,
+     "value": 575
+    }
+   ],
+   "dogma_effects": [
+    {
+     "effect_id": 11,
+     "is_default": false
+    },
+    {
+     "effect_id": 16,
+     "is_default": false
+    },
+    {
+     "effect_id": 1959,
+     "is_default": false
+    },
+    {
+     "effect_id": 2837,
+     "is_default": false
+    }
+   ],
+   "group_id": 329,
+   "icon_id": 79,
+   "market_group_id": 1676,
+   "mass": 0,
+   "name": "Imperial Navy 1600mm Steel Plates",
+   "packaged_volume": 20,
+   "portion_size": 1,
+   "published": true,
+   "radius": 1,
+   "type_id": 31900,
+   "volume": 20
+  },
+  "Large Trimark Armor Pump II": {
+   "capacity": 0,
+   "description": "This ship modification is designed to increase a ship's total armor hit points at the expense of agility.\r\n\r\nThe drawbacks of fitting this rig may be reduced by training the <a href=showinfo:26253>Armor Rigging</a> skill.",
+   "dogma_attributes": [
+    {
+     "attribute_id": 1153,
+     "value": 75
+    },
+    {
+     "attribute_id": 162,
+     "value": 100
+    },
+    {
+     "attribute_id": 4,
+     "value": 200
+    },
+    {
+     "attribute_id": 38,
+     "value": 0
+    },
+    {
+     "attribute_id": 422,
+     "value": 2
+    },
+    {
+     "attribute_id": 161,
+     "value": 20
+    },
+    {
+     "attribute_id": 9,
+     "value": 40
+    },
+    {
+     "attribute_id": 1547,
+     "value": 3
+    },
+    {
+     "attribute_id": 335,
+     "value": 20
+    },
+    {
+     "attribute_id": 1138,
+     "value": 10
+    },
+    {
+     "attribute_id": 633,
+     "value": 5
+    }
+   ],
+   "dogma_effects": [
+    {
+     "effect_id": 271,
+     "is_default": false
+    },
+    {
+     "effect_id": 2663,
+     "is_default": true
+    },
+    {
+     "effect_id": 2717,
+     "is_default": false
+    }
+   ],
+   "group_id": 773,
+   "icon_id": 3194,
+   "market_group_id": 1208,
+   "mass": 200,
+   "name": "Large Trimark Armor Pump II",
+   "packaged_volume": 20,
+   "portion_size": 1,
+   "published": true,
+   "radius": 100,
+   "type_id": 26302,
+   "volume": 20
+  },
+  "Gist X-Type 500MN Microwarpdrive": {
+   "capacity": 0,
+   "description": "Massive boost to speed for a very short time. The thrust that boosts the ship, and the corresponding maximum velocity bonus, are limited by the mass of the ship that uses this module. The sheer amount of energy needed to power this system means that it must permanently reserve a fraction of the capacitor output just to maintain the integrity of its warp containment field, and when activated it substantially increases the ship's EM footprint.\r\n\r\nNote: Battleship class module.",
+   "dogma_attributes": [
+    {
+     "attribute_id": 4,
+     "value": 0
+    },
+    {
+     "attribute_id": 6,
+     "value": 320
+    },
+    {
+     "attribute_id": 9,
+     "value": 40
+    },
+    {
+     "attribute_id": 147,
+     "value": 1
+    },
+    {
+     "attribute_id": 20,
+     "value": 520
+    },
+    {
+     "attribute_id": 277,
+     "value": 1
+    },
+    {
+     "attribute_id": 1692,
+     "value": 6
+    },
+    {
+     "attribute_id": 669,
+     "value": 0
+    },
+    {
+     "attribute_id": 30,
+     "value": 1625
+    },
+    {
+     "attribute_id": 801,
+     "value": 1
+    },
+    {
+     "attribute_id": 162,
+     "value": 1
+    },
+    {
+     "attribute_id": 422,
+     "value": 1
+    },
+    {
+     "attribute_id": 1180,
+     "value": 0.04
+    },
+    {
+     "attribute_id": 554,
+     "value": 350
+    },
+    {
+     "attribute_id": 50,
+     "value": 75
+    },
+    {
+     "attribute_id": 182,
+     "value": 3454
+    },
+    {
+     "attribute_id": 567,
+     "value": 150000000
+    },
+    {
+     "attribute_id": 1211,
+     "value": 8.2
+    },
+    {
+     "attribute_id": 1212,
+     "value": 1
+    },
+    {
+     "attribute_id": 1223,
+     "value": 50
+    },
+    {
+     "attribute_id": 73,
+     "value": 10000
+    },
+    {
+     "attribute_id": 38,
+     "value": 0
+    },
+    {
+     "attribute_id": 796,
+     "value": 50000000
+    },
+    {
+     "attribute_id": 161,
+     "value": 10
+    },
+    {
+     "attribute_id": 633,
+     "value": 16
+    },
+    {
+     "attribute_id": 763,
+     "value": 1
+    }
+   ],
+   "dogma_effects": [
+    {
+     "effect_id": 13,
+     "is_default": false
+    },
+    {
+     "effect_id": 16,
+     "is_default": false
+    },
+    {
+     "effect_id": 58,
+     "is_default": false
+    },
+    {
+     "effect_id": 3175,
+     "is_default": false
+    },
+    {
+     "effect_id": 6730,
+     "is_default": true
+    }
+   ],
+   "group_id": 46,
+   "icon_id": 10149,
+   "market_group_id": 131,
+   "mass": 0,
+   "name": "Gist X-Type 500MN Microwarpdrive",
+   "packaged_volume": 10,
+   "portion_size": 1,
+   "published": true,
+   "radius": 1,
+   "type_id": 19359,
+   "volume": 10
+  },
+  "Gist X-Type 100MN Afterburner": {
+   "capacity": 0,
+   "description": "Gives a boost to the maximum velocity of the ship when activated. The thrust that boosts the ship, and the corresponding maximum velocity bonus, are limited by the mass of the ship that uses this module.\r\n\r\nNote: Usually fit on Battleships.",
+   "dogma_attributes": [
+    {
+     "attribute_id": 4,
+     "value": 0
+    },
+    {
+     "attribute_id": 6,
+     "value": 290
+    },
+    {
+     "attribute_id": 9,
+     "value": 40
+    },
+    {
+     "attribute_id": 20,
+     "value": 165
+    },
+    {
+     "attribute_id": 277,
+     "value": 1
+    },
+    {
+     "attribute_id": 1692,
+     "value": 6
+    },
+    {
+     "attribute_id": 30,
+     "value": 813
+    },
+    {
+     "attribute_id": 801,
+     "value": 0
+    },
+    {
+     "attribute_id": 162,
+     "value": 1
+    },
+    {
+     "attribute_id": 422,
+     "value": 1
+    },
+    {
+     "attribute_id": 1180,
+     "value": 0.04
+    },
+    {
+     "attribute_id": 50,
+     "value": 50
+    },
+    {
+     "attribute_id": 182,
+     "value": 3450
+    },
+    {
+     "attribute_id": 567,
+     "value": 150000000
+    },
+    {
+     "attribute_id": 1211,
+     "value": 4.1
+    },
+    {
+     "attribute_id": 1212,
+     "value": 1
+    },
+    {
+     "attribute_id": 1223,
+     "value": 50
+    },
+    {
+     "attribute_id": 73,
+     "value": 10000
+    },
+    {
+     "attribute_id": 38,
+     "value": 0
+    },
+    {
+     "attribute_id": 796,
+     "value": 50000000
+    },
+    {
+     "attribute_id": 161,
+     "value": 5
+    },
+    {
+     "attribute_id": 633,
+     "value": 16
+    },
+    {
+     "attribute_id": 763,
+     "value": 1
+    }
+   ],
+   "dogma_effects": [
+    {
+     "effect_id": 13,
+     "is_default": false
+    },
+    {
+     "effect_id": 16,
+     "is_default": false
+    },
+    {
+     "effect_id": 3175,
+     "is_default": false
+    },
+    {
+     "effect_id": 6731,
+     "is_default": true
+    }
+   ],
+   "group_id": 46,
+   "icon_id": 96,
+   "market_group_id": 542,
+   "mass": 0,
+   "name": "Gist X-Type 100MN Afterburner",
+   "packaged_volume": 5,
+   "portion_size": 1,
+   "published": true,
+   "radius": 1,
+   "type_id": 18676,
+   "volume": 5
+  },
+  "Dark Blood Large EMP Smartbomb": {
+   "capacity": 0,
+   "description": "Radiates an omnidirectional pulse from the ship that causes EM damage to surrounding vessels.",
+   "dogma_attributes": [
+    {
+     "attribute_id": 4,
+     "value": 100
+    },
+    {
+     "attribute_id": 6,
+     "value": 130
+    },
+    {
+     "attribute_id": 9,
+     "value": 40
+    },
+    {
+     "attribute_id": 277,
+     "value": 1
+    },
+    {
+     "attribute_id": 1692,
+     "value": 4
+    },
+    {
+     "attribute_id": 30,
+     "value": 1000
+    },
+    {
+     "attribute_id": 161,
+     "value": 50
+    },
+    {
+     "attribute_id": 162,
+     "value": 1000
+    },
+    {
+     "attribute_id": 422,
+     "value": 1
+    },
+    {
+     "attribute_id": 1180,
+     "value": 0.01
+    },
+    {
+     "attribute_id": 50,
+     "value": 80
+    },
+    {
+     "attribute_id": 182,
+     "value": 3421
+    },
+    {
+     "attribute_id": 1211,
+     "value": 6.7
+    },
+    {
+     "attribute_id": 1212,
+     "value": 1
+    },
+    {
+     "attribute_id": 1206,
+     "value": -15
+    },
+    {
+     "attribute_id": 73,
+     "value": 10000
+    },
+    {
+     "attribute_id": 99,
+     "value": 7500
+    },
+    {
+     "attribute_id": 38,
+     "value": 0
+    },
+    {
+     "attribute_id": 114,
+     "value": 375
+    },
+    {
+     "attribute_id": 116,
+     "value": 0
+    },
+    {
+     "attribute_id": 117,
+     "value": 0
+    },
+    {
+     "attribute_id": 118,
+     "value": 0
+    },
+    {
+     "attribute_id": 633,
+     "value": 9
+    }
+   ],
+   "dogma_effects": [
+    {
+     "effect_id": 12,
+     "is_default": false
+    },
+    {
+     "effect_id": 16,
+     "is_default": false
+    },
+    {
+     "effect_id": 38,
+     "is_default": true
+    },
+    {
+     "effect_id": 3002,
+     "is_default": false
+    }
+   ],
+   "graphic_id": 2032,
+   "group_id": 72,
+   "icon_id": 112,
+   "market_group_id": 381,
+   "mass": 100,
+   "name": "Dark Blood Large EMP Smartbomb",
+   "packaged_volume": 50,
+   "portion_size": 1,
+   "published": true,
+   "radius": 1000,
+   "type_id": 14188,
+   "volume": 50
+  },
+  "Large Micro Jump Drive": {
+   "capacity": 0,
+   "description": "The Micro Jump Drive is a module that spools up, then jumps the ship forward 100km in the direction it is facing. Upon arrival, the ship maintains its direction and velocity. Warp scramblers can be used to disrupt the module. Spool up time is reduced by the skill <a href=showinfo:4385>Micro Jump Drive Operation</a>.\r\n\r\nThe Micro Jump Drive was developed by Duvolle Laboratories Advanced Manifold Theory Unit. The drive was conceived by the late Avagher Xarasier, the genius behind several ground-breaking innovations of that era.",
+   "dogma_attributes": [
+    {
+     "attribute_id": 4,
+     "value": 0
+    },
+    {
+     "attribute_id": 6,
+     "value": 786
+    },
+    {
+     "attribute_id": 1544,
+     "value": 1
+    },
+    {
+     "attribute_id": 9,
+     "value": 40
+    },
+    {
+     "attribute_id": 906,
+     "value": 1
+    },
+    {
+     "attribute_id": 1298,
+     "value": 27
+    },
+    {
+     "attribute_id": 1299,
+     "value": 898
+    },
+    {
+     "attribute_id": 1300,
+     "value": 900
+    },
+    {
+     "attribute_id": 277,
+     "value": 1
+    },
+    {
+     "attribute_id": 669,
+     "value": 180000
+    },
+    {
+     "attribute_id": 30,
+     "value": 800
+    },
+    {
+     "attribute_id": 161,
+     "value": 10
+    },
+    {
+     "attribute_id": 162,
+     "value": 1
+    },
+    {
+     "attribute_id": 422,
+     "value": 1
+    },
+    {
+     "attribute_id": 50,
+     "value": 54
+    },
+    {
+     "attribute_id": 182,
+     "value": 4385
+    },
+    {
+     "attribute_id": 73,
+     "value": 12000
+    },
+    {
+     "attribute_id": 973,
+     "value": 150
+    },
+    {
+     "attribute_id": 38,
+     "value": 0
+    },
+    {
+     "attribute_id": 1014,
+     "value": 1
+    },
+    {
+     "attribute_id": 633,
+     "value": 1
+    },
+    {
+     "attribute_id": 763,
+     "value": 1
+    }
+   ],
+   "dogma_effects": [
+    {
+     "effect_id": 13,
+     "is_default": false
+    },
+    {
+     "effect_id": 16,
+     "is_default": false
+    },
+    {
+     "effect_id": 4921,
+     "is_default": true
+    }
+   ],
+   "group_id": 1189,
+   "icon_id": 20971,
+   "market_group_id": 1650,
+   "mass": 0,
+   "name": "Large Micro Jump Drive",
+   "packaged_volume": 10,
+   "portion_size": 1,
+   "published": true,
+   "radius": 1,
+   "type_id": 4383,
+   "volume": 10
+  },
+  "Scourge Light Missile": {
+   "capacity": 0,
+   "description": "From its humble beginnings in tiny Minmatar design labs, the Scourge light missile has quickly established itself throughout the star cluster as a premier missile for light launchers.",
+   "dogma_attributes": [
+    {
+     "attribute_id": 644,
+     "value": 1
+    },
+    {
+     "attribute_id": 9,
+     "value": 60
+    },
+    {
+     "attribute_id": 525,
+     "value": 1
+    },
+    {
+     "attribute_id": 654,
+     "value": 40
+    },
+    {
+     "attribute_id": 655,
+     "value": 1500
+    },
+    {
+     "attribute_id": 277,
+     "value": 1
+    },
+    {
+     "attribute_id": 278,
+     "value": 1
+    },
+    {
+     "attribute_id": 137,
+     "value": 509
+    },
+    {
+     "attribute_id": 281,
+     "value": 5000
+    },
+    {
+     "attribute_id": 161,
+     "value": 0.015
+    },
+    {
+     "attribute_id": 162,
+     "value": 300
+    },
+    {
+     "attribute_id": 37,
+     "value": 3750
+    },
+    {
+     "attribute_id": 422,
+     "value": 1
+    },
+    {
+     "attribute_id": 182,
+     "value": 3321
+    },
+    {
+     "attribute_id": 183,
+     "value": 3319
+    },
+    {
+     "attribute_id": 70,
+     "value": 0.00014449800378457667
+    },
+    {
+     "attribute_id": 1353,
+     "value": 0.604
+    },
+    {
+     "attribute_id": 653,
+     "value": 170
+    },
+    {
+     "attribute_id": 38,
+     "value": 0
+    },
+    {
+     "attribute_id": 108,
+     "value": 35
+    },
+    {
+     "attribute_id": 109,
+     "value": 0.8
+    },
+    {
+     "attribute_id": 110,
+     "value": 1
+    },
+    {
+     "attribute_id": 111,
+     "value": 1
+    },
+    {
+     "attribute_id": 113,
+     "value": 1
+    },
+    {
+     "attribute_id": 114,
+     "value": 0
+    },
+    {
+     "attribute_id": 116,
+     "value": 0
+    },
+    {
+     "attribute_id": 117,
+     "value": 83
+    },
+    {
+     "attribute_id": 118,
+     "value": 0
+    },
+    {
+     "attribute_id": 633,
+     "value": 0
+    },
+    {
+     "attribute_id": 4,
+     "value": 700
+    }
+   ],
+   "dogma_effects": [
+    {
+     "effect_id": 9,
+     "is_default": true
+    }
+   ],
+   "graphic_id": 20064,
+   "group_id": 384,
+   "icon_id": 190,
+   "market_group_id": 920,
+   "mass": 700,
+   "name": "Scourge Light Missile",
+   "packaged_volume": 0.015,
+   "portion_size": 100,
+   "published": true,
+   "radius": 300,
+   "type_id": 210,
+   "volume": 0.015
+  },
+  "Scourge Heavy Missile": {
+   "capacity": 0,
+   "description": "The Scourge heavy missile is an old relic from the Caldari-Gallente War that is still in widespread use because of its low price and versatility.",
+   "dogma_attributes": [
+    {
+     "attribute_id": 644,
+     "value": 1
+    },
+    {
+     "attribute_id": 9,
+     "value": 120
+    },
+    {
+     "attribute_id": 525,
+     "value": 1
+    },
+    {
+     "attribute_id": 654,
+     "value": 140
+    },
+    {
+     "attribute_id": 655,
+     "value": 1500
+    },
+    {
+     "attribute_id": 277,
+     "value": 1
+    },
+    {
+     "attribute_id": 278,
+     "value": 1
+    },
+    {
+     "attribute_id": 137,
+     "value": 510
+    },
+    {
+     "attribute_id": 281,
+     "value": 6500
+    },
+    {
+     "attribute_id": 161,
+     "value": 0.03
+    },
+    {
+     "attribute_id": 162,
+     "value": 300
+    },
+    {
+     "attribute_id": 37,
+     "value": 4300
+    },
+    {
+     "attribute_id": 422,
+     "value": 1
+    },
+    {
+     "attribute_id": 182,
+     "value": 3324
+    },
+    {
+     "attribute_id": 183,
+     "value": 3319
+    },
+    {
+     "attribute_id": 70,
+     "value": 0.00014449800378457667
+    },
+    {
+     "attribute_id": 1353,
+     "value": 0.682
+    },
+    {
+     "attribute_id": 653,
+     "value": 85
+    },
+    {
+     "attribute_id": 38,
+     "value": 0
+    },
+    {
+     "attribute_id": 108,
+     "value": 35
+    },
+    {
+     "attribute_id": 109,
+     "value": 0.8
+    },
+    {
+     "attribute_id": 110,
+     "value": 1
+    },
+    {
+     "attribute_id": 111,
+     "value": 1
+    },
+    {
+     "attribute_id": 113,
+     "value": 1
+    },
+    {
+     "attribute_id": 114,
+     "value": 0
+    },
+    {
+     "attribute_id": 116,
+     "value": 0
+    },
+    {
+     "attribute_id": 117,
+     "value": 149
+    },
+    {
+     "attribute_id": 118,
+     "value": 0
+    },
+    {
+     "attribute_id": 633,
+     "value": 0
+    },
+    {
+     "attribute_id": 4,
+     "value": 1000
+    }
+   ],
+   "dogma_effects": [
+    {
+     "effect_id": 9,
+     "is_default": true
+    }
+   ],
+   "graphic_id": 20051,
+   "group_id": 385,
+   "icon_id": 189,
+   "market_group_id": 924,
+   "mass": 1000,
+   "name": "Scourge Heavy Missile",
+   "packaged_volume": 0.03,
+   "portion_size": 100,
+   "published": true,
+   "radius": 300,
+   "type_id": 209,
+   "volume": 0.03
+  },
+  "Scourge Fury Heavy Missile": {
+   "capacity": 0,
+   "description": "The Scourge heavy missile is an old relic from the Caldari-Gallente War that is still in widespread use because of its low price and versatility.\r\n\r\nA modified version of the Scourge heavy missile. Does more damage than its predecessor but the volatile nature of the warhead, and its powerful containment system, reduce both flight time and precision.",
+   "dogma_attributes": [
+    {
+     "attribute_id": 644,
+     "value": 1
+    },
+    {
+     "attribute_id": 9,
+     "value": 120
+    },
+    {
+     "attribute_id": 525,
+     "value": 1
+    },
+    {
+     "attribute_id": 654,
+     "value": 241
+    },
+    {
+     "attribute_id": 655,
+     "value": 1500
+    },
+    {
+     "attribute_id": 277,
+     "value": 1
+    },
+    {
+     "attribute_id": 278,
+     "value": 5
+    },
+    {
+     "attribute_id": 279,
+     "value": 5
+    },
+    {
+     "attribute_id": 137,
+     "value": 510
+    },
+    {
+     "attribute_id": 281,
+     "value": 4875
+    },
+    {
+     "attribute_id": 161,
+     "value": 0.03
+    },
+    {
+     "attribute_id": 162,
+     "value": 300
+    },
+    {
+     "attribute_id": 37,
+     "value": 4300
+    },
+    {
+     "attribute_id": 422,
+     "value": 2
+    },
+    {
+     "attribute_id": 182,
+     "value": 20211
+    },
+    {
+     "attribute_id": 183,
+     "value": 3324
+    },
+    {
+     "attribute_id": 184,
+     "value": 3319
+    },
+    {
+     "attribute_id": 70,
+     "value": 0.00014449800378457667
+    },
+    {
+     "attribute_id": 1353,
+     "value": 0.882
+    },
+    {
+     "attribute_id": 653,
+     "value": 71
+    },
+    {
+     "attribute_id": 38,
+     "value": 0
+    },
+    {
+     "attribute_id": 108,
+     "value": 300
+    },
+    {
+     "attribute_id": 109,
+     "value": 0.8
+    },
+    {
+     "attribute_id": 110,
+     "value": 1
+    },
+    {
+     "attribute_id": 111,
+     "value": 1
+    },
+    {
+     "attribute_id": 113,
+     "value": 1
+    },
+    {
+     "attribute_id": 114,
+     "value": 0
+    },
+    {
+     "attribute_id": 116,
+     "value": 0
+    },
+    {
+     "attribute_id": 117,
+     "value": 201
+    },
+    {
+     "attribute_id": 118,
+     "value": 0
+    },
+    {
+     "attribute_id": 633,
+     "value": 5
+    },
+    {
+     "attribute_id": 4,
+     "value": 1000
+    }
+   ],
+   "dogma_effects": [
+    {
+     "effect_id": 9,
+     "is_default": true
+    }
+   ],
+   "graphic_id": 20051,
+   "group_id": 655,
+   "icon_id": 189,
+   "market_group_id": 926,
+   "mass": 1000,
+   "name": "Scourge Fury Heavy Missile",
+   "packaged_volume": 0.03,
+   "portion_size": 5000,
+   "published": true,
+   "radius": 300,
+   "type_id": 2629,
+   "volume": 0.03
+  },
+  "Scourge Heavy Assault Missile": {
+   "capacity": 0,
+   "description": "A kinetic warhead designed for use with heavy assault launchers. Heavy assault missiles can be fired at a greater rate than heavy missiles, at the expense of effective range.",
+   "dogma_attributes": [
+    {
+     "attribute_id": 644,
+     "value": 1
+    },
+    {
+     "attribute_id": 9,
+     "value": 180
+    },
+    {
+     "attribute_id": 525,
+     "value": 1
+    },
+    {
+     "attribute_id": 654,
+     "value": 125
+    },
+    {
+     "attribute_id": 655,
+     "value": 1500
+    },
+    {
+     "attribute_id": 277,
+     "value": 1
+    },
+    {
+     "attribute_id": 278,
+     "value": 1
+    },
+    {
+     "attribute_id": 137,
+     "value": 771
+    },
+    {
+     "attribute_id": 281,
+     "value": 4000
+    },
+    {
+     "attribute_id": 161,
+     "value": 0.015
+    },
+    {
+     "attribute_id": 162,
+     "value": 300
+    },
+    {
+     "attribute_id": 37,
+     "value": 2250
+    },
+    {
+     "attribute_id": 422,
+     "value": 1
+    },
+    {
+     "attribute_id": 182,
+     "value": 25719
+    },
+    {
+     "attribute_id": 183,
+     "value": 3319
+    },
+    {
+     "attribute_id": 70,
+     "value": 5.220125693558398
+    },
+    {
+     "attribute_id": 1353,
+     "value": 0.882
+    },
+    {
+     "attribute_id": 653,
+     "value": 101
+    },
+    {
+     "attribute_id": 38,
+     "value": 0
+    },
+    {
+     "attribute_id": 108,
+     "value": 35
+    },
+    {
+     "attribute_id": 109,
+     "value": 0.8
+    },
+    {
+     "attribute_id": 110,
+     "value": 1
+    },
+    {
+     "attribute_id": 111,
+     "value": 1
+    },
+    {
+     "attribute_id": 113,
+     "value": 1
+    },
+    {
+     "attribute_id": 114,
+     "value": 0
+    },
+    {
+     "attribute_id": 116,
+     "value": 0
+    },
+    {
+     "attribute_id": 117,
+     "value": 100
+    },
+    {
+     "attribute_id": 118,
+     "value": 0
+    },
+    {
+     "attribute_id": 633,
+     "value": 0
+    },
+    {
+     "attribute_id": 4,
+     "value": 1000
+    }
+   ],
+   "dogma_effects": [
+    {
+     "effect_id": 9,
+     "is_default": true
+    }
+   ],
+   "graphic_id": 20055,
+   "group_id": 772,
+   "icon_id": 3234,
+   "market_group_id": 971,
+   "mass": 1000,
+   "name": "Scourge Heavy Assault Missile",
+   "packaged_volume": 0.015,
+   "portion_size": 100,
+   "published": true,
+   "radius": 300,
+   "type_id": 20307,
+   "volume": 0.015
+  },
+  "Scourge Cruise Missile": {
+   "capacity": 0,
+   "description": "The first Minmatar-made large missile. Constructed of reactionary alloys, the Scourge cruise missile is built to get to the target. Guidance and propulsion systems are of Gallente origin and were initially used in drones, making this a nimble projectile despite its heavy payload.",
+   "dogma_attributes": [
+    {
+     "attribute_id": 644,
+     "value": 1
+    },
+    {
+     "attribute_id": 9,
+     "value": 240
+    },
+    {
+     "attribute_id": 525,
+     "value": 1
+    },
+    {
+     "attribute_id": 654,
+     "value": 330
+    },
+    {
+     "attribute_id": 655,
+     "value": 1500
+    },
+    {
+     "attribute_id": 277,
+     "value": 1
+    },
+    {
+     "attribute_id": 278,
+     "value": 1
+    },
+    {
+     "attribute_id": 137,
+     "value": 506
+    },
+    {
+     "attribute_id": 281,
+     "value": 14000
+    },
+    {
+     "attribute_id": 161,
+     "value": 0.05
+    },
+    {
+     "attribute_id": 162,
+     "value": 300
+    },
+    {
+     "attribute_id": 37,
+     "value": 4700
+    },
+    {
+     "attribute_id": 422,
+     "value": 1
+    },
+    {
+     "attribute_id": 182,
+     "value": 3326
+    },
+    {
+     "attribute_id": 183,
+     "value": 3319
+    },
+    {
+     "attribute_id": 70,
+     "value": 0.00014449800378457667
+    },
+    {
+     "attribute_id": 1353,
+     "value": 0.882
+    },
+    {
+     "attribute_id": 653,
+     "value": 69
+    },
+    {
+     "attribute_id": 38,
+     "value": 0
+    },
+    {
+     "attribute_id": 108,
+     "value": 35
+    },
+    {
+     "attribute_id": 109,
+     "value": 0.8
+    },
+    {
+     "attribute_id": 110,
+     "value": 1
+    },
+    {
+     "attribute_id": 111,
+     "value": 1
+    },
+    {
+     "attribute_id": 113,
+     "value": 1
+    },
+    {
+     "attribute_id": 114,
+     "value": 0
+    },
+    {
+     "attribute_id": 116,
+     "value": 0
+    },
+    {
+     "attribute_id": 117,
+     "value": 375
+    },
+    {
+     "attribute_id": 118,
+     "value": 0
+    },
+    {
+     "attribute_id": 633,
+     "value": 0
+    },
+    {
+     "attribute_id": 4,
+     "value": 1250
+    }
+   ],
+   "dogma_effects": [
+    {
+     "effect_id": 9,
+     "is_default": true
+    }
+   ],
+   "graphic_id": 20043,
+   "group_id": 386,
+   "icon_id": 183,
+   "market_group_id": 921,
+   "mass": 1250,
+   "name": "Scourge Cruise Missile",
+   "packaged_volume": 0.05,
+   "portion_size": 100,
+   "published": true,
+   "radius": 300,
+   "type_id": 203,
+   "volume": 0.05
+  },
+  "Scourge Fury Cruise Missile": {
+   "capacity": 0,
+   "description": "The first Minmatar-made large missile. Constructed of reactionary alloys, the Scourge cruise missile is built to get to the target. Guidance and propulsion systems are of Gallente origin and were initially used in drones, making this a nimble projectile despite its heavy payload.\r\n\r\nA modified version of the Scourge cruise. Does more damage than its predecessor but the volatile nature of the warhead, and its powerful containment system, reduce both flight time and precision.",
+   "dogma_attributes": [
+    {
+     "attribute_id": 644,
+     "value": 1
+    },
+    {
+     "attribute_id": 9,
+     "value": 240
+    },
+    {
+     "attribute_id": 525,
+     "value": 1
+    },
+    {
+     "attribute_id": 654,
+     "value": 567
+    },
+    {
+     "attribute_id": 655,
+     "value": 1500
+    },
+    {
+     "attribute_id": 277,
+     "value": 1
+    },
+    {
+     "attribute_id": 278,
+     "value": 5
+    },
+    {
+     "attribute_id": 279,
+     "value": 5
+    },
+    {
+     "attribute_id": 137,
+     "value": 506
+    },
+    {
+     "attribute_id": 281,
+     "value": 10500
+    },
+    {
+     "attribute_id": 161,
+     "value": 0.05
+    },
+    {
+     "attribute_id": 162,
+     "value": 300
+    },
+    {
+     "attribute_id": 37,
+     "value": 4700
+    },
+    {
+     "attribute_id": 422,
+     "value": 2
+    },
+    {
+     "attribute_id": 182,
+     "value": 20212
+    },
+    {
+     "attribute_id": 183,
+     "value": 3326
+    },
+    {
+     "attribute_id": 184,
+     "value": 3319
+    },
+    {
+     "attribute_id": 70,
+     "value": 0.00014449800378457667
+    },
+    {
+     "attribute_id": 1353,
+     "value": 0.908
+    },
+    {
+     "attribute_id": 653,
+     "value": 58
+    },
+    {
+     "attribute_id": 38,
+     "value": 0
+    },
+    {
+     "attribute_id": 108,
+     "value": 35
+    },
+    {
+     "attribute_id": 109,
+     "value": 0.8
+    },
+    {
+     "attribute_id": 110,
+     "value": 1
+    },
+    {
+     "attribute_id": 111,
+     "value": 1
+    },
+    {
+     "attribute_id": 113,
+     "value": 1
+    },
+    {
+     "attribute_id": 114,
+     "value": 0
+    },
+    {
+     "attribute_id": 116,
+     "value": 0
+    },
+    {
+     "attribute_id": 117,
+     "value": 525
+    },
+    {
+     "attribute_id": 118,
+     "value": 0
+    },
+    {
+     "attribute_id": 633,
+     "value": 5
+    },
+    {
+     "attribute_id": 4,
+     "value": 1250
+    }
+   ],
+   "dogma_effects": [
+    {
+     "effect_id": 9,
+     "is_default": true
+    }
+   ],
+   "graphic_id": 20043,
+   "group_id": 656,
+   "icon_id": 183,
+   "market_group_id": 925,
+   "mass": 1250,
+   "name": "Scourge Fury Cruise Missile",
+   "packaged_volume": 0.05,
+   "portion_size": 5000,
+   "published": true,
+   "radius": 300,
+   "type_id": 24533,
+   "volume": 0.05
+  },
+  "Scourge Torpedo": {
+   "capacity": 0,
+   "description": "An ultra-heavy piercing missile. While it is a slow projectile, its sheer damage potential is simply staggering.",
+   "dogma_attributes": [
+    {
+     "attribute_id": 644,
+     "value": 1
+    },
+    {
+     "attribute_id": 9,
+     "value": 360
+    },
+    {
+     "attribute_id": 525,
+     "value": 1
+    },
+    {
+     "attribute_id": 654,
+     "value": 405
+    },
+    {
+     "attribute_id": 655,
+     "value": 1500
+    },
+    {
+     "attribute_id": 277,
+     "value": 1
+    },
+    {
+     "attribute_id": 278,
+     "value": 1
+    },
+    {
+     "attribute_id": 137,
+     "value": 508
+    },
+    {
+     "attribute_id": 281,
+     "value": 7200
+    },
+    {
+     "attribute_id": 161,
+     "value": 0.05
+    },
+    {
+     "attribute_id": 162,
+     "value": 300
+    },
+    {
+     "attribute_id": 37,
+     "value": 1800
+    },
+    {
+     "attribute_id": 422,
+     "value": 1
+    },
+    {
+     "attribute_id": 182,
+     "value": 3325
+    },
+    {
+     "attribute_id": 183,
+     "value": 3319
+    },
+    {
+     "attribute_id": 70,
+     "value": 5.22012569356
+    },
+    {
+     "attribute_id": 1353,
+     "value": 0.944
+    },
+    {
+     "attribute_id": 653,
+     "value": 78
+    },
+    {
+     "attribute_id": 38,
+     "value": 0
+    },
+    {
+     "attribute_id": 108,
+     "value": 35
+    },
+    {
+     "attribute_id": 109,
+     "value": 0.8
+    },
+    {
+     "attribute_id": 110,
+     "value": 1
+    },
+    {
+     "attribute_id": 111,
+     "value": 1
+    },
+    {
+     "attribute_id": 113,
+     "value": 1
+    },
+    {
+     "attribute_id": 114,
+     "value": 0
+    },
+    {
+     "attribute_id": 116,
+     "value": 0
+    },
+    {
+     "attribute_id": 117,
+     "value": 450
+    },
+    {
+     "attribute_id": 118,
+     "value": 0
+    },
+    {
+     "attribute_id": 633,
+     "value": 0
+    },
+    {
+     "attribute_id": 4,
+     "value": 1500
+    }
+   ],
+   "dogma_effects": [
+    {
+     "effect_id": 9,
+     "is_default": true
+    }
+   ],
+   "graphic_id": 20014,
+   "group_id": 89,
+   "icon_id": 1346,
+   "market_group_id": 923,
+   "mass": 1500,
+   "name": "Scourge Torpedo",
+   "packaged_volume": 0.05,
+   "portion_size": 100,
+   "published": true,
+   "radius": 300,
+   "type_id": 267,
+   "volume": 0.05
+  },
+  "Typhoon": {
+   "capacity": 780,
+   "description": "Much praised by its proponents and much maligned by its detractors, the Typhoon-class battleship has always been one of the most hotly debated spacefaring vessels around. Its distinguishing aspect - and the source of most of the controversy - is its sheer versatility, variously seen as either a lack of design focus or a deliberate freedom for pilot modification.",
+   "dogma_attributes": [
+    {
+     "attribute_id": 3,
+     "value": 0
+    },
+    {
+     "attribute_id": 4,
+     "value": 100600000
+    },
+    {
+     "attribute_id": 518,
+     "value": 7.5
+    },
+    {
+     "attribute_id": 9,
+     "value": 6600
+    },
+    {
+     "attribute_id": 1547,
+     "value": 3
+    },
+    {
+     "attribute_id": 12,
+     "value": 7
+    },
+    {
+     "attribute_id": 13,
+     "value": 5
+    },
+    {
+     "attribute_id": 14,
+     "value": 7
+    },
+    {
+     "attribute_id": 15,
+     "value": 0
+    },
+    {
+     "attribute_id": 18,
+     "value": 0
+    },
+    {
+     "attribute_id": 19,
+     "value": 1
+    },
+    {
+     "attribute_id": 21,
+     "value": 0
+    },
+    {
+     "attribute_id": 37,
+     "value": 130
+    },
+    {
+     "attribute_id": 38,
+     "value": 780
+    },
+    {
+     "attribute_id": 552,
+     "value": 330
+    },
+    {
+     "attribute_id": 48,
+     "value": 640
+    },
+    {
+     "attribute_id": 49,
+     "value": 0
+    },
+    {
+     "attribute_id": 564,
+     "value": 150
+    },
+    {
+     "attribute_id": 55,
+     "value": 1100000
+    },
+    {
+     "attribute_id": 2112,
+     "value": 1
+    },
+    {
+     "attribute_id": 2113,
+     "value": 1
+    },
+    {
+     "attribute_id": 11,
+     "value": 12500
+    },
+    {
+     "attribute_id": 70,
+     "value": 0.11
+    },
+    {
+     "attribute_id": 524,
+     "value": 0.75
+    },
+    {
+     "attribute_id": 76,
+     "value": 82500
+    },
+    {
+     "attribute_id": 525,
+     "value": 1
+    },
+    {
+     "attribute_id": 600,
+     "value": 3
+    },
+    {
+     "attribute_id": 101,
+     "value": 6
+    },
+    {
+     "attribute_id": 102,
+     "value": 6
+    },
+    {
+     "attribute_id": 1132,
+     "value": 400
+    },
+    {
+     "attribute_id": 109,
+     "value": 0.67
+    },
+    {
+     "attribute_id": 110,
+     "value": 0.67
+    },
+    {
+     "attribute_id": 111,
+     "value": 0.67
+    },
+    {
+     "attribute_id": 1137,
+     "value": 3
+    },
+    {
+     "attribute_id": 1555,
+     "value": 500
+    },
+    {
+     "attribute_id": 633,
+     "value": 0
+    },
+    {
+     "attribute_id": 124,
+     "value": 16777215
+    },
+    {
+     "attribute_id": 129,
+     "value": 1000
+    },
+    {
+     "attribute_id": 1154,
+     "value": 3
+    },
+    {
+     "attribute_id": 136,
+     "value": 1
+    },
+    {
+     "attribute_id": 661,
+     "value": 1000
+    },
+    {
+     "attribute_id": 662,
+     "value": 0.5
+    },
+    {
+     "attribute_id": 153,
+     "value": 1.38e-7
+    },
+    {
+     "attribute_id": 1178,
+     "value": 100
+    },
+    {
+     "attribute_id": 1179,
+     "value": 0.01
+    },
+    {
+     "attribute_id": 161,
+     "value": 414000
+    },
+    {
+     "attribute_id": 162,
+     "value": 250
+    },
+    {
+     "attribute_id": 5796,
+     "value": 2147483647000
+    },
+    {
+     "attribute_id": 113,
+     "value": 0.67
+    },
+    {
+     "attribute_id": 1196,
+     "value": 0.01
+    },
+    {
+     "attribute_id": 1198,
+     "value": 0.01
+    },
+    {
+     "attribute_id": 1199,
+     "value": 100
+    },
+    {
+     "attribute_id": 1200,
+     "value": 100
+    },
+    {
+     "attribute_id": 182,
+     "value": 3337
+    },
+    {
+     "attribute_id": 188,
+     "value": 0
+    },
+    {
+     "attribute_id": 192,
+     "value": 7
+    },
+    {
+     "attribute_id": 3266,
+     "value": 50
+    },
+    {
+     "attribute_id": 3267,
+     "value": 100
+    },
+    {
+     "attribute_id": 3268,
+     "value": 0.05
+    },
+    {
+     "attribute_id": 1224,
+     "value": 0.5
+    },
+    {
+     "attribute_id": 208,
+     "value": 0
+    },
+    {
+     "attribute_id": 209,
+     "value": 19
+    },
+    {
+     "attribute_id": 210,
+     "value": 0
+    },
+    {
+     "attribute_id": 211,
+     "value": 0
+    },
+    {
+     "attribute_id": 217,
+     "value": 397
+    },
+    {
+     "attribute_id": 1768,
+     "value": 11342
+    },
+    {
+     "attribute_id": 1259,
+     "value": 0.79
+    },
+    {
+     "attribute_id": 1261,
+     "value": 0.71
+    },
+    {
+     "attribute_id": 1262,
+     "value": 0.79
+    },
+    {
+     "attribute_id": 246,
+     "value": 397
+    },
+    {
+     "attribute_id": 1271,
+     "value": 100
+    },
+    {
+     "attribute_id": 1281,
+     "value": 1
+    },
+    {
+     "attribute_id": 263,
+     "value": 7150
+    },
+    {
+     "attribute_id": 264,
+     "value": 0
+    },
+    {
+     "attribute_id": 265,
+     "value": 6600
+    },
+    {
+     "attribute_id": 267,
+     "value": 0.4
+    },
+    {
+     "attribute_id": 268,
+     "value": 0.9
+    },
+    {
+     "attribute_id": 269,
+     "value": 0.75
+    },
+    {
+     "attribute_id": 270,
+     "value": 0.65
+    },
+    {
+     "attribute_id": 271,
+     "value": 1
+    },
+    {
+     "attribute_id": 272,
+     "value": 0.5
+    },
+    {
+     "attribute_id": 273,
+     "value": 0.6
+    },
+    {
+     "attribute_id": 274,
+     "value": 0.8
+    },
+    {
+     "attribute_id": 277,
+     "value": 1
+    },
+    {
+     "attribute_id": 283,
+     "value": 125
+    },
+    {
+     "attribute_id": 2115,
+     "value": 1
+    },
+    {
+     "attribute_id": 422,
+     "value": 1
+    },
+    {
+     "attribute_id": 3020,
+     "value": 1
+    },
+    {
+     "attribute_id": 79,
+     "value": 6750
+    },
+    {
+     "attribute_id": 479,
+     "value": 2500000
+    },
+    {
+     "attribute_id": 482,
+     "value": 5400
+    },
+    {
+     "attribute_id": 484,
+     "value": 0.75
+    },
+    {
+     "attribute_id": 490,
+     "value": -5
+    },
+    {
+     "attribute_id": 2045,
+     "value": 1
+    }
+   ],
+   "dogma_effects": [
+    {
+     "effect_id": 5429,
+     "is_default": false
+    },
+    {
+     "effect_id": 5430,
+     "is_default": false
+    },
+    {
+     "effect_id": 5620,
+     "is_default": false
+    },
+    {
+     "effect_id": 5621,
+     "is_default": false
+    },
+    {
+     "effect_id": 5622,
+     "is_default": false
+    },
+    {
+     "effect_id": 8377,
+     "is_default": false
+    }
+   ],
+   "graphic_id": 301,
+   "group_id": 27,
+   "market_group_id": 78,
+   "mass": 100600000,
+   "name": "Typhoon",
+   "packaged_volume": 50000,
+   "portion_size": 1,
+   "published": true,
+   "radius": 250,
+   "type_id": 644,
+   "volume": 414000
+  },
+  "Raven": {
+   "capacity": 830,
+   "description": "The Raven is the powerhouse of the Caldari Navy. With its myriad launcher slots and powerful shields, few ships can rival it in strength or majesty.",
+   "dogma_attributes": [
+    {
+     "attribute_id": 3,
+     "value": 0
+    },
+    {
+     "attribute_id": 4,
+     "value": 99300000
+    },
+    {
+     "attribute_id": 9,
+     "value": 7040
+    },
+    {
+     "attribute_id": 1547,
+     "value": 3
+    },
+    {
+     "attribute_id": 12,
+     "value": 5
+    },
+    {
+     "attribute_id": 13,
+     "value": 7
+    },
+    {
+     "attribute_id": 14,
+     "value": 7
+    },
+    {
+     "attribute_id": 15,
+     "value": 0
+    },
+    {
+     "attribute_id": 18,
+     "value": 0
+    },
+    {
+     "attribute_id": 19,
+     "value": 1
+    },
+    {
+     "attribute_id": 21,
+     "value": 0
+    },
+    {
+     "attribute_id": 37,
+     "value": 113
+    },
+    {
+     "attribute_id": 38,
+     "value": 830
+    },
+    {
+     "attribute_id": 552,
+     "value": 410
+    },
+    {
+     "attribute_id": 48,
+     "value": 750
+    },
+    {
+     "attribute_id": 49,
+     "value": 0
+    },
+    {
+     "attribute_id": 564,
+     "value": 111
+    },
+    {
+     "attribute_id": 55,
+     "value": 1150000
+    },
+    {
+     "attribute_id": 2112,
+     "value": 1
+    },
+    {
+     "attribute_id": 2113,
+     "value": 1
+    },
+    {
+     "attribute_id": 11,
+     "value": 11000
+    },
+    {
+     "attribute_id": 70,
+     "value": 0.12
+    },
+    {
+     "attribute_id": 524,
+     "value": 0.75
+    },
+    {
+     "attribute_id": 76,
+     "value": 90000
+    },
+    {
+     "attribute_id": 525,
+     "value": 1
+    },
+    {
+     "attribute_id": 598,
+     "value": 10
+    },
+    {
+     "attribute_id": 600,
+     "value": 3
+    },
+    {
+     "attribute_id": 101,
+     "value": 6
+    },
+    {
+     "attribute_id": 102,
+     "value": 4
+    },
+    {
+     "attribute_id": 1132,
+     "value": 400
+    },
+    {
+     "attribute_id": 109,
+     "value": 0.67
+    },
+    {
+     "attribute_id": 110,
+     "value": 0.67
+    },
+    {
+     "attribute_id": 111,
+     "value": 0.67
+    },
+    {
+     "attribute_id": 1137,
+     "value": 3
+    },
+    {
+     "attribute_id": 1555,
+     "value": 500
+    },
+    {
+     "attribute_id": 633,
+     "value": 0
+    },
+    {
+     "attribute_id": 124,
+     "value": 16777215
+    },
+    {
+     "attribute_id": 129,
+     "value": 1000
+    },
+    {
+     "attribute_id": 1154,
+     "value": 3
+    },
+    {
+     "attribute_id": 136,
+     "value": 1
+    },
+    {
+     "attribute_id": 661,
+     "value": 1000
+    },
+    {
+     "attribute_id": 662,
+     "value": 0.5
+    },
+    {
+     "attribute_id": 153,
+     "value": 1.38e-7
+    },
+    {
+     "attribute_id": 1178,
+     "value": 100
+    },
+    {
+     "attribute_id": 1179,
+     "value": 0.01
+    },
+    {
+     "attribute_id": 161,
+     "value": 470000
+    },
+    {
+     "attribute_id": 162,
+     "value": 250
+    },
+    {
+     "attribute_id": 5796,
+     "value": 2147483647000
+    },
+    {
+     "attribute_id": 113,
+     "value": 0.67
+    },
+    {
+     "attribute_id": 1196,
+     "value": 0.01
+    },
+    {
+     "attribute_id": 1198,
+     "value": 0.01
+    },
+    {
+     "attribute_id": 1199,
+     "value": 100
+    },
+    {
+     "attribute_id": 1200,
+     "value": 100
+    },
+    {
+     "attribute_id": 182,
+     "value": 3338
+    },
+    {
+     "attribute_id": 188,
+     "value": 0
+    },
+    {
+     "attribute_id": 192,
+     "value": 7
+    },
+    {
+     "attribute_id": 3266,
+     "value": 50
+    },
+    {
+     "attribute_id": 3267,
+     "value": 100
+    },
+    {
+     "attribute_id": 3268,
+     "value": 0.05
+    },
+    {
+     "attribute_id": 1224,
+     "value": 0.5
+    },
+    {
+     "attribute_id": 208,
+     "value": 0
+    },
+    {
+     "attribute_id": 209,
+     "value": 0
+    },
+    {
+     "attribute_id": 210,
+     "value": 0
+    },
+    {
+     "attribute_id": 211,
+     "value": 22
+    },
+    {
+     "attribute_id": 217,
+     "value": 395
+    },
+    {
+     "attribute_id": 1768,
+     "value": 11324
+    },
+    {
+     "attribute_id": 1259,
+     "value": 0.79
+    },
+    {
+     "attribute_id": 1261,
+     "value": 0.79
+    },
+    {
+     "attribute_id": 1262,
+     "value": 0.71
+    },
+    {
+     "attribute_id": 246,
+     "value": 395
+    },
+    {
+     "attribute_id": 1271,
+     "value": 50
+    },
+    {
+     "attribute_id": 1281,
+     "value": 1
+    },
+    {
+     "attribute_id": 263,
+     "value": 7700
+    },
+    {
+     "attribute_id": 264,
+     "value": 0
+    },
+    {
+     "attribute_id": 265,
+     "value": 6380
+    },
+    {
+     "attribute_id": 267,
+     "value": 0.5
+    },
+    {
+     "attribute_id": 268,
+     "value": 0.9
+    },
+    {
+     "attribute_id": 269,
+     "value": 0.75
+    },
+    {
+     "attribute_id": 270,
+     "value": 0.55
+    },
+    {
+     "attribute_id": 271,
+     "value": 1
+    },
+    {
+     "attribute_id": 272,
+     "value": 0.5
+    },
+    {
+     "attribute_id": 273,
+     "value": 0.6
+    },
+    {
+     "attribute_id": 274,
+     "value": 0.8
+    },
+    {
+     "attribute_id": 277,
+     "value": 1
+    },
+    {
+     "attribute_id": 283,
+     "value": 75
+    },
+    {
+     "attribute_id": 2115,
+     "value": 1
+    },
+    {
+     "attribute_id": 422,
+     "value": 1
+    },
+    {
+     "attribute_id": 3020,
+     "value": 1
+    },
+    {
+     "attribute_id": 79,
+     "value": 9000
+    },
+    {
+     "attribute_id": 479,
+     "value": 2500000
+    },
+    {
+     "attribute_id": 482,
+     "value": 5500
+    },
+    {
+     "attribute_id": 484,
+     "value": 0.75
+    },
+    {
+     "attribute_id": 491,
+     "value": 10
+    },
+    {
+     "attribute_id": 501,
+     "value": -5
+    },
+    {
+     "attribute_id": 2045,
+     "value": 1
+    }
+   ],
+   "dogma_effects": [
+    {
+     "effect_id": 891,
+     "is_default": false
+    },
+    {
+     "effect_id": 892,
+     "is_default": false
+    },
+    {
+     "effect_id": 1885,
+     "is_default": false
+    },
+    {
+     "effect_id": 1886,
+     "is_default": false
+    },
+    {
+     "effect_id": 5618,
+     "is_default": false
+    },
+    {
+     "effect_id": 8377,
+     "is_default": false
+    }
+   ],
+   "graphic_id": 43,
+   "group_id": 27,
+   "market_group_id": 80,
+   "mass": 99300000,
+   "name": "Raven",
+   "packaged_volume": 50000,
+   "portion_size": 1,
+   "published": true,
+   "radius": 250,
+   "type_id": 638,
+   "volume": 470000
+  },
+  "Barghest": {
+   "capacity": 830,
+   "description": "In YC 116, Mordu’s Legion intelligence reported to command that the Guristas pirates were developing new and advanced strike craft capabilities using unknown technologies. In response to these reports, Mordu’s Legion accelerated a program of ship development that was itself a response to trends in capsuleer tactics and warfare. The crash development and manufacturing effort resulted in a new family of fast strike ships integrated with one another to provide tactical flexibility and firepower across ship class lines.\r\n\r\nThe Barghest represents the pinnacle of the Legion’s ambitions for its new strike craft doctrine: A fast battleship with high-speed missile delivery systems, fully capable of contesting the field with more traditional heavy skirmishers.",
+   "dogma_attributes": [
+    {
+     "attribute_id": 3,
+     "value": 0
+    },
+    {
+     "attribute_id": 4,
+     "value": 98467000
+    },
+    {
+     "attribute_id": 9,
+     "value": 8910
+    },
+    {
+     "attribute_id": 1547,
+     "value": 3
+    },
+    {
+     "attribute_id": 12,
+     "value": 6
+    },
+    {
+     "attribute_id": 13,
+     "value": 6
+    },
+    {
+     "attribute_id": 14,
+     "value": 8
+    },
+    {
+     "attribute_id": 15,
+     "value": 0
+    },
+    {
+     "attribute_id": 18,
+     "value": 0
+    },
+    {
+     "attribute_id": 19,
+     "value": 1
+    },
+    {
+     "attribute_id": 21,
+     "value": 0
+    },
+    {
+     "attribute_id": 37,
+     "value": 148
+    },
+    {
+     "attribute_id": 38,
+     "value": 830
+    },
+    {
+     "attribute_id": 552,
+     "value": 370
+    },
+    {
+     "attribute_id": 48,
+     "value": 730
+    },
+    {
+     "attribute_id": 49,
+     "value": 0
+    },
+    {
+     "attribute_id": 564,
+     "value": 143
+    },
+    {
+     "attribute_id": 55,
+     "value": 1154875
+    },
+    {
+     "attribute_id": 2112,
+     "value": 1
+    },
+    {
+     "attribute_id": 2113,
+     "value": 1
+    },
+    {
+     "attribute_id": 11,
+     "value": 11600
+    },
+    {
+     "attribute_id": 70,
+     "value": 0.098
+    },
+    {
+     "attribute_id": 524,
+     "value": 0.75
+    },
+    {
+     "attribute_id": 76,
+     "value": 91200
+    },
+    {
+     "attribute_id": 525,
+     "value": 1
+    },
+    {
+     "attribute_id": 600,
+     "value": 3
+    },
+    {
+     "attribute_id": 101,
+     "value": 6
+    },
+    {
+     "attribute_id": 102,
+     "value": 0
+    },
+    {
+     "attribute_id": 1132,
+     "value": 350
+    },
+    {
+     "attribute_id": 109,
+     "value": 0.67
+    },
+    {
+     "attribute_id": 110,
+     "value": 0.67
+    },
+    {
+     "attribute_id": 111,
+     "value": 0.67
+    },
+    {
+     "attribute_id": 1137,
+     "value": 3
+    },
+    {
+     "attribute_id": 1555,
+     "value": 750
+    },
+    {
+     "attribute_id": 633,
+     "value": 8
+    },
+    {
+     "attribute_id": 124,
+     "value": 16777215
+    },
+    {
+     "attribute_id": 129,
+     "value": 1000
+    },
+    {
+     "attribute_id": 1154,
+     "value": 3
+    },
+    {
+     "attribute_id": 136,
+     "value": 1
+    },
+    {
+     "attribute_id": 661,
+     "value": 1000
+    },
+    {
+     "attribute_id": 662,
+     "value": 0.5
+    },
+    {
+     "attribute_id": 1688,
+     "value": -50
+    },
+    {
+     "attribute_id": 153,
+     "value": 1.38e-7
+    },
+    {
+     "attribute_id": 1178,
+     "value": 100
+    },
+    {
+     "attribute_id": 1179,
+     "value": 0.01
+    },
+    {
+     "attribute_id": 1692,
+     "value": 4
+    },
+    {
+     "attribute_id": 161,
+     "value": 470000
+    },
+    {
+     "attribute_id": 162,
+     "value": 650
+    },
+    {
+     "attribute_id": 5796,
+     "value": 2147483647000
+    },
+    {
+     "attribute_id": 113,
+     "value": 0.67
+    },
+    {
+     "attribute_id": 1196,
+     "value": 0.01
+    },
+    {
+     "attribute_id": 1198,
+     "value": 0.01
+    },
+    {
+     "attribute_id": 1199,
+     "value": 100
+    },
+    {
+     "attribute_id": 1200,
+     "value": 100
+    },
+    {
+     "attribute_id": 182,
+     "value": 3338
+    },
+    {
+     "attribute_id": 183,
+     "value": 3336
+    },
+    {
+     "attribute_id": 188,
+     "value": 0
+    },
+    {
+     "attribute_id": 192,
+     "value": 7
+    },
+    {
+     "attribute_id": 3266,
+     "value": 50
+    },
+    {
+     "attribute_id": 3267,
+     "value": 100
+    },
+    {
+     "attribute_id": 3268,
+     "value": 0.05
+    },
+    {
+     "attribute_id": 1224,
+     "value": 0.5
+    },
+    {
+     "attribute_id": 208,
+     "value": 0
+    },
+    {
+     "attribute_id": 209,
+     "value": 0
+    },
+    {
+     "attribute_id": 210,
+     "value": 0
+    },
+    {
+     "attribute_id": 211,
+     "value": 29
+    },
+    {
+     "attribute_id": 217,
+     "value": 397
+    },
+    {
+     "attribute_id": 1768,
+     "value": 11318
+    },
+    {
+     "attribute_id": 1259,
+     "value": 0.82
+    },
+    {
+     "attribute_id": 1261,
+     "value": 0.76
+    },
+    {
+     "attribute_id": 1262,
+     "value": 0.76
+    },
+    {
+     "attribute_id": 246,
+     "value": 397
+    },
+    {
+     "attribute_id": 1271,
+     "value": 50
+    },
+    {
+     "attribute_id": 1281,
+     "value": 1
+    },
+    {
+     "attribute_id": 263,
+     "value": 12320
+    },
+    {
+     "attribute_id": 264,
+     "value": 0
+    },
+    {
+     "attribute_id": 265,
+     "value": 9625
+    },
+    {
+     "attribute_id": 267,
+     "value": 0.5
+    },
+    {
+     "attribute_id": 268,
+     "value": 0.9
+    },
+    {
+     "attribute_id": 269,
+     "value": 0.75
+    },
+    {
+     "attribute_id": 270,
+     "value": 0.55
+    },
+    {
+     "attribute_id": 271,
+     "value": 1
+    },
+    {
+     "attribute_id": 272,
+     "value": 0.5
+    },
+    {
+     "attribute_id": 273,
+     "value": 0.6
+    },
+    {
+     "attribute_id": 274,
+     "value": 0.8
+    },
+    {
+     "attribute_id": 277,
+     "value": 1
+    },
+    {
+     "attribute_id": 278,
+     "value": 1
+    },
+    {
+     "attribute_id": 793,
+     "value": 200
+    },
+    {
+     "attribute_id": 283,
+     "value": 75
+    },
+    {
+     "attribute_id": 2115,
+     "value": 1
+    },
+    {
+     "attribute_id": 422,
+     "value": 1
+    },
+    {
+     "attribute_id": 3020,
+     "value": 1
+    },
+    {
+     "attribute_id": 79,
+     "value": 6750
+    },
+    {
+     "attribute_id": 479,
+     "value": 2500000
+    },
+    {
+     "attribute_id": 482,
+     "value": 6100
+    },
+    {
+     "attribute_id": 484,
+     "value": 0.75
+    },
+    {
+     "attribute_id": 491,
+     "value": 10
+    },
+    {
+     "attribute_id": 500,
+     "value": 10
+    },
+    {
+     "attribute_id": 2045,
+     "value": 1
+    }
+   ],
+   "dogma_effects": [
+    {
+     "effect_id": 1230,
+     "is_default": false
+    },
+    {
+     "effect_id": 5862,
+     "is_default": false
+    },
+    {
+     "effect_id": 5863,
+     "is_default": false
+    },
+    {
+     "effect_id": 5864,
+     "is_default": false
+    },
+    {
+     "effect_id": 5865,
+     "is_default": false
+    },
+    {
+     "effect_id": 5866,
+     "is_default": false
+    },
+    {
+     "effect_id": 5867,
+     "is_default": false
+    },
+    {
+     "effect_id": 8377,
+     "is_default": false
+    }
+   ],
+   "graphic_id": 20615,
+   "group_id": 27,
+   "market_group_id": 1380,
+   "mass": 98467000,
+   "name": "Barghest",
+   "packaged_volume": 50000,
+   "portion_size": 1,
+   "published": true,
+   "radius": 650,
+   "type_id": 33820,
+   "volume": 470000
+  },
+  "Cerberus": {
+   "capacity": 650,
+   "description": "No cruiser currently in existence can match the superiority of the Cerberus's onboard missile system. With a well-trained pilot jacked in, this fanged horror is capable of unleashing a hail of missiles to send even the most seasoned armor tankers running for cover. \r\n\r\nMoving away from their traditionally balanced all-round designs, Lai Dai have created a very specialized - and dangerous - missile boat in the Cerberus. Many have speculated that due to recent friction between Caldari megacorporations, LD may be looking to beef up their own police force with these missile-spewing monstrosities.",
+   "dogma_attributes": [
+    {
+     "attribute_id": 3,
+     "value": 0
+    },
+    {
+     "attribute_id": 4,
+     "value": 12720000
+    },
+    {
+     "attribute_id": 9,
+     "value": 1400
+    },
+    {
+     "attribute_id": 1547,
+     "value": 2
+    },
+    {
+     "attribute_id": 12,
+     "value": 4
+    },
+    {
+     "attribute_id": 13,
+     "value": 5
+    },
+    {
+     "attribute_id": 14,
+     "value": 6
+    },
+    {
+     "attribute_id": 15,
+     "value": 0
+    },
+    {
+     "attribute_id": 18,
+     "value": 0
+    },
+    {
+     "attribute_id": 19,
+     "value": 1
+    },
+    {
+     "attribute_id": 21,
+     "value": 0
+    },
+    {
+     "attribute_id": 37,
+     "value": 220
+    },
+    {
+     "attribute_id": 38,
+     "value": 650
+    },
+    {
+     "attribute_id": 552,
+     "value": 135
+    },
+    {
+     "attribute_id": 48,
+     "value": 535
+    },
+    {
+     "attribute_id": 49,
+     "value": 0
+    },
+    {
+     "attribute_id": 564,
+     "value": 282
+    },
+    {
+     "attribute_id": 55,
+     "value": 235000
+    },
+    {
+     "attribute_id": 2112,
+     "value": 1
+    },
+    {
+     "attribute_id": 2113,
+     "value": 1
+    },
+    {
+     "attribute_id": 11,
+     "value": 820
+    },
+    {
+     "attribute_id": 70,
+     "value": 0.463
+    },
+    {
+     "attribute_id": 524,
+     "value": 0.75
+    },
+    {
+     "attribute_id": 76,
+     "value": 60000
+    },
+    {
+     "attribute_id": 525,
+     "value": 1
+    },
+    {
+     "attribute_id": 600,
+     "value": 4
+    },
+    {
+     "attribute_id": 101,
+     "value": 6
+    },
+    {
+     "attribute_id": 102,
+     "value": 0
+    },
+    {
+     "attribute_id": 1132,
+     "value": 400
+    },
+    {
+     "attribute_id": 109,
+     "value": 0.67
+    },
+    {
+     "attribute_id": 110,
+     "value": 0.67
+    },
+    {
+     "attribute_id": 111,
+     "value": 0.67
+    },
+    {
+     "attribute_id": 1137,
+     "value": 2
+    },
+    {
+     "attribute_id": 1555,
+     "value": 200
+    },
+    {
+     "attribute_id": 633,
+     "value": 5
+    },
+    {
+     "attribute_id": 124,
+     "value": 16777215
+    },
+    {
+     "attribute_id": 129,
+     "value": 580
+    },
+    {
+     "attribute_id": 1154,
+     "value": 2
+    },
+    {
+     "attribute_id": 136,
+     "value": 1
+    },
+    {
+     "attribute_id": 657,
+     "value": 20
+    },
+    {
+     "attribute_id": 153,
+     "value": 8.13e-7
+    },
+    {
+     "attribute_id": 1178,
+     "value": 100
+    },
+    {
+     "attribute_id": 1179,
+     "value": 0.01
+    },
+    {
+     "attribute_id": 161,
+     "value": 92000
+    },
+    {
+     "attribute_id": 162,
+     "value": 202
+    },
+    {
+     "attribute_id": 5796,
+     "value": 2147483647000
+    },
+    {
+     "attribute_id": 113,
+     "value": 0.67
+    },
+    {
+     "attribute_id": 1196,
+     "value": 0.01
+    },
+    {
+     "attribute_id": 1198,
+     "value": 0.01
+    },
+    {
+     "attribute_id": 1199,
+     "value": 100
+    },
+    {
+     "attribute_id": 1200,
+     "value": 100
+    },
+    {
+     "attribute_id": 692,
+     "value": 7.5
+    },
+    {
+     "attribute_id": 693,
+     "value": -5
+    },
+    {
+     "attribute_id": 182,
+     "value": 3334
+    },
+    {
+     "attribute_id": 183,
+     "value": 16591
+    },
+    {
+     "attribute_id": 188,
+     "value": 0
+    },
+    {
+     "attribute_id": 192,
+     "value": 6
+    },
+    {
+     "attribute_id": 1224,
+     "value": 0.75
+    },
+    {
+     "attribute_id": 208,
+     "value": 0
+    },
+    {
+     "attribute_id": 209,
+     "value": 0
+    },
+    {
+     "attribute_id": 210,
+     "value": 0
+    },
+    {
+     "attribute_id": 211,
+     "value": 24
+    },
+    {
+     "attribute_id": 217,
+     "value": 395
+    },
+    {
+     "attribute_id": 1768,
+     "value": 11412
+    },
+    {
+     "attribute_id": 1259,
+     "value": 0.76
+    },
+    {
+     "attribute_id": 1261,
+     "value": 0.71
+    },
+    {
+     "attribute_id": 1262,
+     "value": 0.63
+    },
+    {
+     "attribute_id": 246,
+     "value": 395
+    },
+    {
+     "attribute_id": 1271,
+     "value": 15
+    },
+    {
+     "attribute_id": 1281,
+     "value": 1
+    },
+    {
+     "attribute_id": 263,
+     "value": 2000
+    },
+    {
+     "attribute_id": 264,
+     "value": 0
+    },
+    {
+     "attribute_id": 265,
+     "value": 1200
+    },
+    {
+     "attribute_id": 1803,
+     "value": -50
+    },
+    {
+     "attribute_id": 268,
+     "value": 0.9
+    },
+    {
+     "attribute_id": 269,
+     "value": 0.375
+    },
+    {
+     "attribute_id": 270,
+     "value": 0.1375
+    },
+    {
+     "attribute_id": 271,
+     "value": 1
+    },
+    {
+     "attribute_id": 272,
+     "value": 0.5
+    },
+    {
+     "attribute_id": 273,
+     "value": 0.3
+    },
+    {
+     "attribute_id": 274,
+     "value": 0.2
+    },
+    {
+     "attribute_id": 277,
+     "value": 5
+    },
+    {
+     "attribute_id": 278,
+     "value": 1
+    },
+    {
+     "attribute_id": 283,
+     "value": 15
+    },
+    {
+     "attribute_id": 267,
+     "value": 0.5
+    },
+    {
+     "attribute_id": 2115,
+     "value": 1
+    },
+    {
+     "attribute_id": 422,
+     "value": 2
+    },
+    {
+     "attribute_id": 79,
+     "value": 4500
+    },
+    {
+     "attribute_id": 479,
+     "value": 1250000
+    },
+    {
+     "attribute_id": 482,
+     "value": 1200
+    },
+    {
+     "attribute_id": 484,
+     "value": 0.75
+    },
+    {
+     "attribute_id": 487,
+     "value": 5
+    },
+    {
+     "attribute_id": 2045,
+     "value": 1
+    }
+   ],
+   "dogma_effects": [
+    {
+     "effect_id": 899,
+     "is_default": false
+    },
+    {
+     "effect_id": 2647,
+     "is_default": false
+    },
+    {
+     "effect_id": 2648,
+     "is_default": false
+    },
+    {
+     "effect_id": 2649,
+     "is_default": false
+    },
+    {
+     "effect_id": 4902,
+     "is_default": false
+    },
+    {
+     "effect_id": 5644,
+     "is_default": false
+    },
+    {
+     "effect_id": 11414,
+     "is_default": false
+    }
+   ],
+   "graphic_id": 1825,
+   "group_id": 358,
+   "market_group_id": 450,
+   "mass": 12720000,
+   "name": "Cerberus",
+   "packaged_volume": 10000,
+   "portion_size": 1,
+   "published": true,
+   "radius": 202,
+   "type_id": 11993,
+   "volume": 92000
+  },
+  "Muninn": {
+   "capacity": 515,
+   "description": "Commissioned by the Republic Fleet to create a powerful assault vessel for the strengthening of the Matari tribes as well as a commercial platform for the Heavy Missiles and other weapons produced by the Fleet, Boundless Creation came up with the Muninn. Heavily armored, laden with missile hardpoints and sporting the latest in warhead optimization technology, this is the very definition of heavy assault.",
+   "dogma_attributes": [
+    {
+     "attribute_id": 3,
+     "value": 0
+    },
+    {
+     "attribute_id": 4,
+     "value": 11000000
+    },
+    {
+     "attribute_id": 9,
+     "value": 1400
+    },
+    {
+     "attribute_id": 1547,
+     "value": 2
+    },
+    {
+     "attribute_id": 12,
+     "value": 6
+    },
+    {
+     "attribute_id": 13,
+     "value": 4
+    },
+    {
+     "attribute_id": 14,
+     "value": 5
+    },
+    {
+     "attribute_id": 15,
+     "value": 0
+    },
+    {
+     "attribute_id": 18,
+     "value": 0
+    },
+    {
+     "attribute_id": 19,
+     "value": 1
+    },
+    {
+     "attribute_id": 21,
+     "value": 0
+    },
+    {
+     "attribute_id": 37,
+     "value": 235
+    },
+    {
+     "attribute_id": 38,
+     "value": 515
+    },
+    {
+     "attribute_id": 552,
+     "value": 125
+    },
+    {
+     "attribute_id": 48,
+     "value": 405
+    },
+    {
+     "attribute_id": 49,
+     "value": 0
+    },
+    {
+     "attribute_id": 564,
+     "value": 294
+    },
+    {
+     "attribute_id": 55,
+     "value": 255000
+    },
+    {
+     "attribute_id": 2112,
+     "value": 1
+    },
+    {
+     "attribute_id": 2113,
+     "value": 1
+    },
+    {
+     "attribute_id": 11,
+     "value": 1000
+    },
+    {
+     "attribute_id": 70,
+     "value": 0.571
+    },
+    {
+     "attribute_id": 524,
+     "value": 0.75
+    },
+    {
+     "attribute_id": 76,
+     "value": 55000
+    },
+    {
+     "attribute_id": 525,
+     "value": 1
+    },
+    {
+     "attribute_id": 600,
+     "value": 4
+    },
+    {
+     "attribute_id": 101,
+     "value": 5
+    },
+    {
+     "attribute_id": 102,
+     "value": 1
+    },
+    {
+     "attribute_id": 1132,
+     "value": 400
+    },
+    {
+     "attribute_id": 109,
+     "value": 0.67
+    },
+    {
+     "attribute_id": 110,
+     "value": 0.67
+    },
+    {
+     "attribute_id": 111,
+     "value": 0.67
+    },
+    {
+     "attribute_id": 1137,
+     "value": 2
+    },
+    {
+     "attribute_id": 1555,
+     "value": 200
+    },
+    {
+     "attribute_id": 633,
+     "value": 5
+    },
+    {
+     "attribute_id": 124,
+     "value": 16777215
+    },
+    {
+     "attribute_id": 129,
+     "value": 580
+    },
+    {
+     "attribute_id": 1154,
+     "value": 2
+    },
+    {
+     "attribute_id": 136,
+     "value": 1
+    },
+    {
+     "attribute_id": 659,
+     "value": 5
+    },
+    {
+     "attribute_id": 153,
+     "value": 8.13e-7
+    },
+    {
+     "attribute_id": 1178,
+     "value": 100
+    },
+    {
+     "attribute_id": 1179,
+     "value": 0.01
+    },
+    {
+     "attribute_id": 161,
+     "value": 96000
+    },
+    {
+     "attribute_id": 162,
+     "value": 88
+    },
+    {
+     "attribute_id": 5796,
+     "value": 2147483647000
+    },
+    {
+     "attribute_id": 113,
+     "value": 0.67
+    },
+    {
+     "attribute_id": 1196,
+     "value": 0.01
+    },
+    {
+     "attribute_id": 1198,
+     "value": 0.01
+    },
+    {
+     "attribute_id": 1199,
+     "value": 100
+    },
+    {
+     "attribute_id": 1200,
+     "value": 100
+    },
+    {
+     "attribute_id": 692,
+     "value": 5
+    },
+    {
+     "attribute_id": 693,
+     "value": -5
+    },
+    {
+     "attribute_id": 182,
+     "value": 3333
+    },
+    {
+     "attribute_id": 183,
+     "value": 16591
+    },
+    {
+     "attribute_id": 188,
+     "value": 0
+    },
+    {
+     "attribute_id": 192,
+     "value": 6
+    },
+    {
+     "attribute_id": 1224,
+     "value": 0.75
+    },
+    {
+     "attribute_id": 208,
+     "value": 0
+    },
+    {
+     "attribute_id": 209,
+     "value": 21
+    },
+    {
+     "attribute_id": 210,
+     "value": 0
+    },
+    {
+     "attribute_id": 211,
+     "value": 0
+    },
+    {
+     "attribute_id": 217,
+     "value": 397
+    },
+    {
+     "attribute_id": 1768,
+     "value": 11405
+    },
+    {
+     "attribute_id": 1259,
+     "value": 0.71
+    },
+    {
+     "attribute_id": 1261,
+     "value": 0.63
+    },
+    {
+     "attribute_id": 1262,
+     "value": 0.76
+    },
+    {
+     "attribute_id": 246,
+     "value": 397
+    },
+    {
+     "attribute_id": 1271,
+     "value": 25
+    },
+    {
+     "attribute_id": 1281,
+     "value": 1
+    },
+    {
+     "attribute_id": 263,
+     "value": 1580
+    },
+    {
+     "attribute_id": 264,
+     "value": 0
+    },
+    {
+     "attribute_id": 265,
+     "value": 2300
+    },
+    {
+     "attribute_id": 1803,
+     "value": -50
+    },
+    {
+     "attribute_id": 268,
+     "value": 0.9
+    },
+    {
+     "attribute_id": 269,
+     "value": 0.75
+    },
+    {
+     "attribute_id": 270,
+     "value": 0.325
+    },
+    {
+     "attribute_id": 271,
+     "value": 0.25
+    },
+    {
+     "attribute_id": 272,
+     "value": 0.5
+    },
+    {
+     "attribute_id": 273,
+     "value": 0.6
+    },
+    {
+     "attribute_id": 274,
+     "value": 0.4
+    },
+    {
+     "attribute_id": 277,
+     "value": 5
+    },
+    {
+     "attribute_id": 278,
+     "value": 1
+    },
+    {
+     "attribute_id": 283,
+     "value": 25
+    },
+    {
+     "attribute_id": 267,
+     "value": 0.1
+    },
+    {
+     "attribute_id": 2115,
+     "value": 1
+    },
+    {
+     "attribute_id": 422,
+     "value": 2
+    },
+    {
+     "attribute_id": 79,
+     "value": 4500
+    },
+    {
+     "attribute_id": 479,
+     "value": 1250000
+    },
+    {
+     "attribute_id": 482,
+     "value": 1300
+    },
+    {
+     "attribute_id": 484,
+     "value": 0.75
+    },
+    {
+     "attribute_id": 489,
+     "value": -3
+    },
+    {
+     "attribute_id": 2045,
+     "value": 1
+    }
+   ],
+   "dogma_effects": [
+    {
+     "effect_id": 2647,
+     "is_default": false
+    },
+    {
+     "effect_id": 2648,
+     "is_default": false
+    },
+    {
+     "effect_id": 2649,
+     "is_default": false
+    },
+    {
+     "effect_id": 4902,
+     "is_default": false
+    },
+    {
+     "effect_id": 11411,
+     "is_default": false
+    },
+    {
+     "effect_id": 11412,
+     "is_default": false
+    },
+    {
+     "effect_id": 11413,
+     "is_default": false
+    }
+   ],
+   "graphic_id": 1925,
+   "group_id": 358,
+   "market_group_id": 452,
+   "mass": 11000000,
+   "name": "Muninn",
+   "packaged_volume": 10000,
+   "portion_size": 1,
+   "published": true,
+   "radius": 88,
+   "type_id": 12015,
+   "volume": 96000
+  },
+  "Large EMP Smartbomb II": {
+   "capacity": 0,
+   "description": "Radiates an omnidirectional pulse from the ship that causes EM damage to surrounding vessels.",
+   "dogma_attributes": [
+    {
+     "attribute_id": 4,
+     "value": 100
+    },
+    {
+     "attribute_id": 6,
+     "value": 220
+    },
+    {
+     "attribute_id": 9,
+     "value": 40
+    },
+    {
+     "attribute_id": 277,
+     "value": 5
+    },
+    {
+     "attribute_id": 1180,
+     "value": 0.02
+    },
+    {
+     "attribute_id": 30,
+     "value": 1100
+    },
+    {
+     "attribute_id": 161,
+     "value": 50
+    },
+    {
+     "attribute_id": 162,
+     "value": 1000
+    },
+    {
+     "attribute_id": 422,
+     "value": 2
+    },
+    {
+     "attribute_id": 50,
+     "value": 80
+    },
+    {
+     "attribute_id": 182,
+     "value": 3421
+    },
+    {
+     "attribute_id": 1211,
+     "value": 6.7
+    },
+    {
+     "attribute_id": 1212,
+     "value": 1
+    },
+    {
+     "attribute_id": 1206,
+     "value": -15
+    },
+    {
+     "attribute_id": 73,
+     "value": 10000
+    },
+    {
+     "attribute_id": 99,
+     "value": 6000
+    },
+    {
+     "attribute_id": 38,
+     "value": 0
+    },
+    {
+     "attribute_id": 114,
+     "value": 300
+    },
+    {
+     "attribute_id": 116,
+     "value": 0
+    },
+    {
+     "attribute_id": 117,
+     "value": 0
+    },
+    {
+     "attribute_id": 118,
+     "value": 0
+    },
+    {
+     "attribute_id": 633,
+     "value": 5
+    }
+   ],
+   "dogma_effects": [
+    {
+     "effect_id": 12,
+     "is_default": false
+    },
+    {
+     "effect_id": 16,
+     "is_default": false
+    },
+    {
+     "effect_id": 38,
+     "is_default": true
+    },
+    {
+     "effect_id": 3002,
+     "is_default": false
+    }
+   ],
+   "graphic_id": 2032,
+   "group_id": 72,
+   "icon_id": 112,
+   "market_group_id": 381,
+   "mass": 100,
+   "name": "Large EMP Smartbomb II",
+   "packaged_volume": 50,
+   "portion_size": 1,
+   "published": true,
+   "radius": 1000,
+   "type_id": 3995,
+   "volume": 50
+  },
+  "Large EMP Smartbomb I": {
+   "capacity": 0,
+   "description": "Radiates an omnidirectional pulse from the ship that causes EM damage to surrounding vessels.",
+   "dogma_attributes": [
+    {
+     "attribute_id": 4,
+     "value": 100
+    },
+    {
+     "attribute_id": 6,
+     "value": 200
+    },
+    {
+     "attribute_id": 9,
+     "value": 40
+    },
+    {
+     "attribute_id": 277,
+     "value": 1
+    },
+    {
+     "attribute_id": 1180,
+     "value": 0.01
+    },
+    {
+     "attribute_id": 30,
+     "value": 1000
+    },
+    {
+     "attribute_id": 161,
+     "value": 50
+    },
+    {
+     "attribute_id": 162,
+     "value": 1000
+    },
+    {
+     "attribute_id": 422,
+     "value": 1
+    },
+    {
+     "attribute_id": 50,
+     "value": 80
+    },
+    {
+     "attribute_id": 182,
+     "value": 3421
+    },
+    {
+     "attribute_id": 1211,
+     "value": 6.7
+    },
+    {
+     "attribute_id": 1212,
+     "value": 1
+    },
+    {
+     "attribute_id": 1206,
+     "value": -15
+    },
+    {
+     "attribute_id": 73,
+     "value": 10000
+    },
+    {
+     "attribute_id": 99,
+     "value": 5000
+    },
+    {
+     "attribute_id": 38,
+     "value": 0
+    },
+    {
+     "attribute_id": 114,
+     "value": 250
+    },
+    {
+     "attribute_id": 116,
+     "value": 0
+    },
+    {
+     "attribute_id": 117,
+     "value": 0
+    },
+    {
+     "attribute_id": 118,
+     "value": 0
+    },
+    {
+     "attribute_id": 633,
+     "value": 0
+    }
+   ],
+   "dogma_effects": [
+    {
+     "effect_id": 12,
+     "is_default": false
+    },
+    {
+     "effect_id": 16,
+     "is_default": false
+    },
+    {
+     "effect_id": 38,
+     "is_default": true
+    },
+    {
+     "effect_id": 3002,
+     "is_default": false
+    }
+   ],
+   "graphic_id": 2032,
+   "group_id": 72,
+   "icon_id": 112,
+   "market_group_id": 381,
+   "mass": 100,
+   "name": "Large EMP Smartbomb I",
+   "packaged_volume": 50,
+   "portion_size": 1,
+   "published": true,
+   "radius": 1000,
+   "type_id": 3993,
+   "volume": 50
+  }
+ },
+ "attributes": {
+  "3": {
+   "name": "damage",
+   "display": "Item Damage",
+   "unit": 113
+  },
+  "4": {
+   "name": "mass",
+   "display": "Mass",
+   "unit": 2
+  },
+  "6": {
+   "name": "capacitorNeed",
+   "display": "Activation Cost",
+   "unit": 114
+  },
+  "9": {
+   "name": "hp",
+   "display": "Structure Hitpoints",
+   "unit": 113
+  },
+  "11": {
+   "name": "powerOutput",
+   "display": "Powergrid Output",
+   "unit": 107
+  },
+  "12": {
+   "name": "lowSlots",
+   "display": "Low Slots",
+   "unit": 122
+  },
+  "13": {
+   "name": "medSlots",
+   "display": "Medium Slots",
+   "unit": 122
+  },
+  "14": {
+   "name": "hiSlots",
+   "display": "High Slots",
+   "unit": 122
+  },
+  "15": {
+   "name": "powerLoad",
+   "display": "Power Load",
+   "unit": 107
+  },
+  "18": {
+   "name": "charge",
+   "display": null,
+   "unit": 114
+  },
+  "19": {
+   "name": "powerToSpeed",
+   "display": null,
+   "unit": null
+  },
+  "20": {
+   "name": "speedFactor",
+   "display": "Maximum Velocity Bonus",
+   "unit": 124
+  },
+  "21": {
+   "name": "warpFactor",
+   "display": null,
+   "unit": null
+  },
+  "30": {
+   "name": "power",
+   "display": "Powergrid Usage",
+   "unit": 107
+  },
+  "37": {
+   "name": "maxVelocity",
+   "display": "Maximum Velocity",
+   "unit": 11
+  },
+  "38": {
+   "name": "capacity",
+   "display": "Capacity",
+   "unit": 9
+  },
+  "48": {
+   "name": "cpuOutput",
+   "display": "CPU Output",
+   "unit": 106
+  },
+  "49": {
+   "name": "cpuLoad",
+   "display": "CPU Load",
+   "unit": 106
+  },
+  "50": {
+   "name": "cpu",
+   "display": "CPU usage",
+   "unit": 106
+  },
+  "55": {
+   "name": "rechargeRate",
+   "display": "Capacitor Recharge time",
+   "unit": 101
+  },
+  "70": {
+   "name": "agility",
+   "display": "Inertia Modifier",
+   "unit": 104
+  },
+  "73": {
+   "name": "duration",
+   "display": "Activation time / duration",
+   "unit": 101
+  },
+  "76": {
+   "name": "maxTargetRange",
+   "display": "Maximum Targeting Range",
+   "unit": 1
+  },
+  "79": {
+   "name": "scanSpeed",
+   "display": null,
+   "unit": 101
+  },
+  "99": {
+   "name": "empFieldRange",
+   "display": "Area of effect radius",
+   "unit": 1
+  },
+  "101": {
+   "name": "launcherSlotsLeft",
+   "display": "Launcher Hardpoints",
+   "unit": 141
+  },
+  "102": {
+   "name": "turretSlotsLeft",
+   "display": "Turret Hardpoints",
+   "unit": 141
+  },
+  "108": {
+   "name": "detonationRange",
+   "display": null,
+   "unit": 1
+  },
+  "109": {
+   "name": "kineticDamageResonance",
+   "display": "Structure Kinetic Damage Resistance",
+   "unit": 108
+  },
+  "110": {
+   "name": "thermalDamageResonance",
+   "display": "Structure Thermal Damage Resistance",
+   "unit": 108
+  },
+  "111": {
+   "name": "explosiveDamageResonance",
+   "display": "Structure Explosive Damage Resistance",
+   "unit": 108
+  },
+  "113": {
+   "name": "emDamageResonance",
+   "display": "Structure EM Damage Resistance",
+   "unit": 108
+  },
+  "114": {
+   "name": "emDamage",
+   "display": "EM damage",
+   "unit": 113
+  },
+  "116": {
+   "name": "explosiveDamage",
+   "display": "Explosive damage",
+   "unit": 113
+  },
+  "117": {
+   "name": "kineticDamage",
+   "display": "Kinetic damage",
+   "unit": 113
+  },
+  "118": {
+   "name": "thermalDamage",
+   "display": "Thermal damage",
+   "unit": 113
+  },
+  "124": {
+   "name": "mainColor",
+   "display": null,
+   "unit": null
+  },
+  "129": {
+   "name": "maxPassengers",
+   "display": null,
+   "unit": null
+  },
+  "136": {
+   "name": "uniformity",
+   "display": null,
+   "unit": null
+  },
+  "137": {
+   "name": "launcherGroup",
+   "display": "Used with (Launcher Group)",
+   "unit": 115
+  },
+  "147": {
+   "name": "capacitorCapacityMultiplier",
+   "display": "Capacitor Capacity Bonus",
+   "unit": 109
+  },
+  "153": {
+   "name": "warpCapacitorNeed",
+   "display": null,
+   "unit": null
+  },
+  "161": {
+   "name": "volume",
+   "display": "Volume",
+   "unit": 9
+  },
+  "162": {
+   "name": "radius",
+   "display": null,
+   "unit": null
+  },
+  "182": {
+   "name": "requiredSkill1",
+   "display": "Primary Skill required",
+   "unit": 116
+  },
+  "183": {
+   "name": "requiredSkill2",
+   "display": "Secondary Skill required",
+   "unit": 116
+  },
+  "184": {
+   "name": "requiredSkill3",
+   "display": "Tertiary Skill required",
+   "unit": 116
+  },
+  "188": {
+   "name": "cargoScanResistance",
+   "display": "Cargo Scan Resistance",
+   "unit": 127
+  },
+  "192": {
+   "name": "maxLockedTargets",
+   "display": "Maximum Locked Targets",
+   "unit": null
+  },
+  "208": {
+   "name": "scanRadarStrength",
+   "display": "RADAR Sensor Strength",
+   "unit": 120
+  },
+  "209": {
+   "name": "scanLadarStrength",
+   "display": "Ladar Sensor Strength",
+   "unit": 120
+  },
+  "210": {
+   "name": "scanMagnetometricStrength",
+   "display": "Magnetometric Sensor Strength",
+   "unit": 120
+  },
+  "211": {
+   "name": "scanGravimetricStrength",
+   "display": "Gravimetric Sensor Strength",
+   "unit": 120
+  },
+  "217": {
+   "name": "propulsionGraphicID",
+   "display": null,
+   "unit": null
+  },
+  "246": {
+   "name": "gfxBoosterID",
+   "display": null,
+   "unit": null
+  },
+  "263": {
+   "name": "shieldCapacity",
+   "display": "Shield Capacity",
+   "unit": 113
+  },
+  "264": {
+   "name": "shieldCharge",
+   "display": null,
+   "unit": null
+  },
+  "265": {
+   "name": "armorHP",
+   "display": "Armor Hitpoints",
+   "unit": 113
+  },
+  "267": {
+   "name": "armorEmDamageResonance",
+   "display": "Armor EM Damage Resistance",
+   "unit": 108
+  },
+  "268": {
+   "name": "armorExplosiveDamageResonance",
+   "display": "Armor Explosive Damage Resistance",
+   "unit": 108
+  },
+  "269": {
+   "name": "armorKineticDamageResonance",
+   "display": "Armor Kinetic Damage Resistance",
+   "unit": 108
+  },
+  "270": {
+   "name": "armorThermalDamageResonance",
+   "display": "Armor Thermal Damage Resistance",
+   "unit": 108
+  },
+  "271": {
+   "name": "shieldEmDamageResonance",
+   "display": "Shield EM Damage Resistance",
+   "unit": 108
+  },
+  "272": {
+   "name": "shieldExplosiveDamageResonance",
+   "display": "Shield Explosive Damage Resistance",
+   "unit": 108
+  },
+  "273": {
+   "name": "shieldKineticDamageResonance",
+   "display": "Shield Kinetic Damage Resistance",
+   "unit": 108
+  },
+  "274": {
+   "name": "shieldThermalDamageResonance",
+   "display": "Shield Thermal Damage Resistance",
+   "unit": 108
+  },
+  "277": {
+   "name": "requiredSkill1Level",
+   "display": null,
+   "unit": null
+  },
+  "278": {
+   "name": "requiredSkill2Level",
+   "display": null,
+   "unit": null
+  },
+  "279": {
+   "name": "requiredSkill3Level",
+   "display": null,
+   "unit": null
+  },
+  "281": {
+   "name": "explosionDelay",
+   "display": "Maximum Flight Time",
+   "unit": 101
+  },
+  "283": {
+   "name": "droneCapacity",
+   "display": "Drone Capacity",
+   "unit": 9
+  },
+  "335": {
+   "name": "armorHpBonus",
+   "display": "Armor Hitpoint Bonus",
+   "unit": 105
+  },
+  "422": {
+   "name": "techLevel",
+   "display": "Tech Level",
+   "unit": 140
+  },
+  "479": {
+   "name": "shieldRechargeRate",
+   "display": "Shield recharge time",
+   "unit": 101
+  },
+  "482": {
+   "name": "capacitorCapacity",
+   "display": "Capacitor Capacity",
+   "unit": 114
+  },
+  "484": {
+   "name": "shieldUniformity",
+   "display": null,
+   "unit": null
+  },
+  "487": {
+   "name": "shipBonusCC",
+   "display": null,
+   "unit": null
+  },
+  "489": {
+   "name": "shipBonusMC",
+   "display": null,
+   "unit": null
+  },
+  "490": {
+   "name": "shipBonusMB",
+   "display": null,
+   "unit": null
+  },
+  "491": {
+   "name": "shipBonusCB",
+   "display": null,
+   "unit": null
+  },
+  "492": {
+   "name": "shipBonusAB",
+   "display": null,
+   "unit": null
+  },
+  "500": {
+   "name": "shipBonusGB",
+   "display": null,
+   "unit": null
+  },
+  "501": {
+   "name": "shipBonus2CB",
+   "display": null,
+   "unit": null
+  },
+  "518": {
+   "name": "shipBonusMB2",
+   "display": null,
+   "unit": null
+  },
+  "524": {
+   "name": "armorUniformity",
+   "display": null,
+   "unit": null
+  },
+  "525": {
+   "name": "structureUniformity",
+   "display": null,
+   "unit": null
+  },
+  "552": {
+   "name": "signatureRadius",
+   "display": "Signature Radius",
+   "unit": 1
+  },
+  "554": {
+   "name": "signatureRadiusBonus",
+   "display": "Signature Radius Modifier",
+   "unit": 124
+  },
+  "561": {
+   "name": "shipBonusGB2",
+   "display": null,
+   "unit": null
+  },
+  "564": {
+   "name": "scanResolution",
+   "display": "Scan Resolution",
+   "unit": 102
+  },
+  "567": {
+   "name": "speedBoostFactor",
+   "display": "Thrust",
+   "unit": 125
+  },
+  "598": {
+   "name": "shipBonusCB3",
+   "display": null,
+   "unit": null
+  },
+  "600": {
+   "name": "warpSpeedMultiplier",
+   "display": "Warp Speed Multiplier",
+   "unit": 104
+  },
+  "633": {
+   "name": "metaLevelOld",
+   "display": "Meta Level",
+   "unit": 140
+  },
+  "644": {
+   "name": "aimedLaunch",
+   "display": null,
+   "unit": null
+  },
+  "653": {
+   "name": "aoeVelocity",
+   "display": "Explosion Velocity",
+   "unit": 10
+  },
+  "654": {
+   "name": "aoeCloudSize",
+   "display": "Explosion Radius",
+   "unit": 1
+  },
+  "655": {
+   "name": "aoeFalloff",
+   "display": null,
+   "unit": null
+  },
+  "657": {
+   "name": "shipBonusCC2",
+   "display": null,
+   "unit": null
+  },
+  "659": {
+   "name": "shipBonusMC2",
+   "display": null,
+   "unit": null
+  },
+  "661": {
+   "name": "maxDirectionalVelocity",
+   "display": null,
+   "unit": null
+  },
+  "662": {
+   "name": "minTargetVelDmgMultiplier",
+   "display": null,
+   "unit": null
+  },
+  "669": {
+   "name": "moduleReactivationDelay",
+   "display": "Reactivation Delay",
+   "unit": 101
+  },
+  "692": {
+   "name": "eliteBonusHeavyGunship1",
+   "display": null,
+   "unit": null
+  },
+  "693": {
+   "name": "eliteBonusHeavyGunship2",
+   "display": null,
+   "unit": null
+  },
+  "715": {
+   "name": "maxOperationalDistance",
+   "display": "Maximum Operational Distance",
+   "unit": 1
+  },
+  "716": {
+   "name": "maxOperationalUsers",
+   "display": "Maximum Concurrent Operational Users",
+   "unit": null
+  },
+  "763": {
+   "name": "maxGroupActive",
+   "display": null,
+   "unit": null
+  },
+  "793": {
+   "name": "shipBonusRole7",
+   "display": null,
+   "unit": null
+  },
+  "796": {
+   "name": "massAddition",
+   "display": "Mass Addition",
+   "unit": 2
+  },
+  "801": {
+   "name": "deadspaceUnsafe",
+   "display": null,
+   "unit": null
+  },
+  "906": {
+   "name": "disallowEarlyDeactivation",
+   "display": null,
+   "unit": null
+  },
+  "907": {
+   "name": "hasShipMaintenanceBay",
+   "display": null,
+   "unit": null
+  },
+  "908": {
+   "name": "shipMaintenanceBayCapacity",
+   "display": "Ship Maintenance Bay Capacity",
+   "unit": 9
+  },
+  "973": {
+   "name": "signatureRadiusBonusPercent",
+   "display": "Signature radius bonus",
+   "unit": 105
+  },
+  "1014": {
+   "name": "disallowRepeatingActivation",
+   "display": "Cannot Auto Repeat",
+   "unit": 137
+  },
+  "1132": {
+   "name": "upgradeCapacity",
+   "display": "Calibration",
+   "unit": 120
+  },
+  "1137": {
+   "name": "rigSlots",
+   "display": "Rig Slots",
+   "unit": 122
+  },
+  "1138": {
+   "name": "drawback",
+   "display": "Drawback",
+   "unit": 105
+  },
+  "1153": {
+   "name": "upgradeCost",
+   "display": "Calibration cost",
+   "unit": null
+  },
+  "1154": {
+   "name": "upgradeSlotsLeft",
+   "display": "Rig Slots",
+   "unit": 122
+  },
+  "1159": {
+   "name": "armorHPBonusAdd",
+   "display": "Armor Hitpoint Bonus",
+   "unit": 113
+  },
+  "1178": {
+   "name": "heatCapacityHi",
+   "display": null,
+   "unit": null
+  },
+  "1179": {
+   "name": "heatDissipationRateHi",
+   "display": null,
+   "unit": null
+  },
+  "1180": {
+   "name": "heatAbsorbtionRateModifier",
+   "display": null,
+   "unit": null
+  },
+  "1196": {
+   "name": "heatDissipationRateMed",
+   "display": null,
+   "unit": null
+  },
+  "1198": {
+   "name": "heatDissipationRateLow",
+   "display": null,
+   "unit": null
+  },
+  "1199": {
+   "name": "heatCapacityMed",
+   "display": null,
+   "unit": null
+  },
+  "1200": {
+   "name": "heatCapacityLow",
+   "display": null,
+   "unit": null
+  },
+  "1206": {
+   "name": "overloadSelfDurationBonus",
+   "display": "Overload duration bonus",
+   "unit": 105
+  },
+  "1211": {
+   "name": "heatDamage",
+   "display": "Heat Damage",
+   "unit": 113
+  },
+  "1212": {
+   "name": "requiredThermoDynamicsSkill",
+   "display": "Required Thermodynamics Level",
+   "unit": 140
+  },
+  "1223": {
+   "name": "overloadSpeedFactorBonus",
+   "display": "Overload Speed Bonus",
+   "unit": 105
+  },
+  "1224": {
+   "name": "heatGenerationMultiplier",
+   "display": null,
+   "unit": null
+  },
+  "1259": {
+   "name": "heatAttenuationHi",
+   "display": "Heat Attenuation",
+   "unit": null
+  },
+  "1261": {
+   "name": "heatAttenuationMed",
+   "display": null,
+   "unit": null
+  },
+  "1262": {
+   "name": "heatAttenuationLow",
+   "display": null,
+   "unit": null
+  },
+  "1271": {
+   "name": "droneBandwidth",
+   "display": "Drone Bandwidth",
+   "unit": 128
+  },
+  "1281": {
+   "name": "baseWarpSpeed",
+   "display": "Ship Warp Speed",
+   "unit": 144
+  },
+  "1298": {
+   "name": "canFitShipGroup01",
+   "display": "Can only be fitted to",
+   "unit": 115
+  },
+  "1299": {
+   "name": "canFitShipGroup02",
+   "display": "Can be fitted to",
+   "unit": 115
+  },
+  "1300": {
+   "name": "canFitShipGroup03",
+   "display": "Can be fitted to",
+   "unit": 115
+  },
+  "1353": {
+   "name": "aoeDamageReductionFactor",
+   "display": null,
+   "unit": null
+  },
+  "1544": {
+   "name": "maxGroupFitted",
+   "display": "Max Modules Of This Group Allowed",
+   "unit": null
+  },
+  "1547": {
+   "name": "rigSize",
+   "display": "Rig Size",
+   "unit": 117
+  },
+  "1555": {
+   "name": "fwLpKill",
+   "display": null,
+   "unit": null
+  },
+  "1688": {
+   "name": "shipBonusRole8",
+   "display": null,
+   "unit": null
+  },
+  "1692": {
+   "name": "metaGroupID",
+   "display": null,
+   "unit": null
+  },
+  "1768": {
+   "name": "typeColorScheme",
+   "display": null,
+   "unit": null
+  },
+  "1803": {
+   "name": "MWDSignatureRadiusBonus",
+   "display": "MWD sig penalty and cap need bonus",
+   "unit": 105
+  },
+  "1918": {
+   "name": "virusStrengthBonus",
+   "display": "Analyzer Virus Strength Bonus",
+   "unit": null
+  },
+  "2045": {
+   "name": "energyWarfareResistance",
+   "display": "Capacitor Warfare Resistance",
+   "unit": 108
+  },
+  "2112": {
+   "name": "sensorDampenerResistance",
+   "display": "Sensor Warfare Resistance",
+   "unit": 108
+  },
+  "2113": {
+   "name": "weaponDisruptionResistance",
+   "display": "Weapon Disruption Resistance",
+   "unit": 108
+  },
+  "2115": {
+   "name": "stasisWebifierResistance",
+   "display": "Stasis Webifier Resistance",
+   "unit": 108
+  },
+  "3020": {
+   "name": "frigateEscapeBayCapacity",
+   "display": "Frigate Escape Bay",
+   "unit": 138
+  },
+  "3266": {
+   "name": "battleshipPlateHPBonus",
+   "display": null,
+   "unit": null
+  },
+  "3267": {
+   "name": "battleshipExtenderHPBonus",
+   "display": null,
+   "unit": null
+  },
+  "3268": {
+   "name": "battleshipBulkheadHPModifierBonus",
+   "display": null,
+   "unit": null
+  },
+  "5796": {
+   "name": "maxDirectionalScanRange",
+   "display": "Maximum Directional Scan Range",
+   "unit": 1
+  }
+ }
+}
