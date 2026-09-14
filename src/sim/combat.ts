@@ -384,6 +384,19 @@ interface FleetParams {
   warpPeriodS: number;
   count: number;
   personality: FleetPersonality;
+  /** Typhoon habit: cruise with no prop running, light the MWD now and then. */
+  mwdBursts?: boolean;
+}
+
+/** Typhoon personality (user request 2026-09-13): the fleet moves at no-prop
+ *  speed and every 40-90 s burns on MWD for 8-15 s. Long-range Typhoons kite
+ *  instead of sitting still. Off when personalities are off or speed is 0. */
+function typhoonize(p: FleetParams, on: boolean | undefined): FleetParams {
+  if (!on || p.shipType !== 'Typhoon' || p.speed <= 0) return p;
+  return {
+    ...p, speed: PROP_SPEEDS.battleship.none, mwdBursts: true,
+    personality: p.personality === 'sit' ? 'kite' : p.personality,
+  };
 }
 
 /** How a hostile fleet fights, beyond the geometric orbit/serpentine pattern. */
@@ -425,10 +438,16 @@ export class HostileFleet {
   private diveMode: 'orbit' | 'through' = 'orbit';
   private throughPoint: Vec3 | null = null;
   private pendingWingOff: Vec3 | null = null;
+  // MWD bursts draw from their own stream so the shared seeded sequence is unchanged.
+  private readonly burstRnd: () => number;
+  private burstUntil = 0;
+  private nextBurstAt = Infinity;
 
   constructor(w: CombatWorld, idx: number, p: FleetParams, bearing: number) {
     this.p = p;
     this.idPrefix = `h${idx}_`;
+    this.burstRnd = makeRng(w.cfg.seed * 31 + idx + 1);
+    if (p.mwdBursts) this.scheduleBurst(0);
     const rnd = w.rnd;
     const hc = add(w.friendly.center, v3(
       Math.cos(bearing) * p.distanceKm * 1000, (rnd() - 0.5) * 4000,
@@ -457,6 +476,15 @@ export class HostileFleet {
     this.orbitSign = rnd() < 0.5 ? 1 : -1;
     this.weavePhase = rnd() * Math.PI * 2;
     if (p.warpPeriodS > 0) this.nextWarpAt = Math.round(p.warpPeriodS * (0.7 + 0.6 * rnd()));
+  }
+
+  private scheduleBurst(t: number): void {
+    this.nextBurstAt = t + 40 + Math.round(this.burstRnd() * 50);
+  }
+
+  /** Current FC speed: no-prop cruise, MWD while a burst is running. */
+  private speedNow(t: number): number {
+    return this.p.mwdBursts && t < this.burstUntil ? PROP_SPEEDS.battleship.mwd : this.p.speed;
   }
 
   visible(): boolean { return this.state !== 'warping'; }
@@ -536,6 +564,12 @@ export class HostileFleet {
         const d = Math.max(len(r), 1);
         const rHat = scale(r, 1 / d);
         const pers = this.p.personality;
+        if (this.p.mwdBursts && t >= this.nextBurstAt) {
+          this.burstUntil = t + 8 + Math.round(this.burstRnd() * 7);
+          this.scheduleBurst(this.burstUntil);
+          w.callouts.push(`${this.p.shipType} fleet is burning on MWD`);
+        }
+        const speed = this.speedNow(t);
         if (pers === 'sit') {
           // Long-range cruise fleets often just sit still on a ping.
           this.blob.integrate(v3(0, 0, 0), dt);
@@ -543,7 +577,7 @@ export class HostileFleet {
           // Burn straight through the ball and out the far side, then orbit.
           const to = sub(this.throughPoint, this.blob.center);
           if (len(to) < 3000) this.diveMode = 'orbit';
-          this.blob.integrate(scale(norm(to), this.p.speed), dt);
+          this.blob.integrate(scale(norm(to), speed), dt);
         } else {
           let tang = cross(UP, rHat);
           if (len(tang) < 1e-6) tang = v3(1, 0, 0);
@@ -563,7 +597,7 @@ export class HostileFleet {
             }
           }
           const dir = norm(add(tang, scale(rHat, radial)));
-          this.blob.integrate(scale(dir, this.p.speed), dt);
+          this.blob.integrate(scale(dir, speed), dt);
         }
         this.maybeRelocateEarly(w, t);
         if (t >= this.nextWarpAt) this.beginRelocation(w, t);
@@ -615,6 +649,7 @@ export class HostileFleet {
           this.orbitSign = rnd() < 0.5 ? 1 : -1;
           this.engagedAt = t;
           this.earlyWarpArmed = true;
+          if (this.p.mwdBursts) { this.burstUntil = 0; this.scheduleBurst(t); }
           this.diveMode = 'orbit';
           this.throughPoint = null;
           if (this.p.personality === 'dive' && rnd() < 0.35) {
@@ -750,20 +785,20 @@ export class CombatWorld {
 
     // Fleet 1 from the flat config fields; fleets 2-3 from doctrine presets.
     const baseBearing = rnd() * Math.PI * 2;
-    this.hostiles.push(new HostileFleet(this, 0, {
+    this.hostiles.push(new HostileFleet(this, 0, typhoonize({
       shipType: cfg.shipType ?? 'Typhoon', missile: cfg.missile, mult: cfg.missileVelocityMult,
       ftMult: 1, speed: cfg.hostileSpeed, distanceKm: cfg.fightingDistanceKm,
       warpPeriodS: cfg.warpPeriodS, count: cfg.hostileCount,
       personality: personalityFor(cfg.missile, cfg.fightingDistanceKm, cfg.hostilePersonalities),
-    }, baseBearing));
+    }, cfg.hostilePersonalities), baseBearing));
     (cfg.extraFleets ?? []).slice(0, 2).forEach((ef, i) => {
       const d = DOCTRINES[ef.doctrine];
       const speed = ef.prop ? PROP_SPEEDS[SHIP_CLASS[d.ship] ?? 'battleship'][ef.prop] : d.speed;
-      this.hostiles.push(new HostileFleet(this, i + 1, {
+      this.hostiles.push(new HostileFleet(this, i + 1, typhoonize({
         shipType: d.ship, missile: d.missile, mult: d.mult, ftMult: d.ftMult, speed,
         distanceKm: ef.distanceKm, warpPeriodS: ef.warpPeriodS, count: ef.count,
         personality: personalityFor(d.missile, ef.distanceKm, cfg.hostilePersonalities),
-      }, baseBearing + (i + 1) * (Math.PI * 2 / 3) + (rnd() - 0.5)));
+      }, cfg.hostilePersonalities), baseBearing + (i + 1) * (Math.PI * 2 / 3) + (rnd() - 0.5)));
     });
 
     this.friendlyHeading = norm(v3(rnd() - 0.5, (rnd() - 0.5) * 0.2, rnd() - 0.5));

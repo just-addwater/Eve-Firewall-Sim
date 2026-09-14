@@ -404,6 +404,21 @@ describe('enemy FC', () => {
     expect(len(sub(sit.combat!.hostile.center, start))).toBeLessThan(500);
   });
 
+  it('Typhoons cruise at no-prop speed and burst on MWD now and then', () => {
+    const s = makeCombatSim({ ...DEFAULT_SCENARIO, warpPeriodS: 0 });
+    const f = s.combat!.hostiles[0];
+    expect(f.p.speed).toBe(130);
+    let slow = 0, fast = 0;
+    for (let t = 0; t < 400; t++) {
+      s.step();
+      const v = len(f.blob.vel);
+      if (v < 200) slow++;
+      if (v > 800) fast++;
+    }
+    expect(slow).toBeGreaterThan(200);   // mostly no-prop
+    expect(fast).toBeGreaterThan(5);     // but some MWD bursts
+  });
+
   it('relocation callouts are hidden when training aids are off', () => {
     const s = drill({ warpPeriodS: 15, hostileCount: 5, launchersPerShip: 1, friendlySpeed: 0 });
     s.calloutsVisible = false;
