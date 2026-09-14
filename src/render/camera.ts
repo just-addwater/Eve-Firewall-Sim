@@ -176,7 +176,7 @@ export class CameraRig {
     } else {
       let chaseTau = DRAG_TAU_MS;
       if (this.dragging) {
-        const dYaw = -this.pendX * ROT_GAIN * this.rotSpeed;
+        const dYaw = this.pendX * ROT_GAIN * this.rotSpeed;
         const dPitch = this.pendY * ROT_GAIN * this.rotSpeed;
         this.yawT += dYaw;
         this.pitchT += dPitch;
